@@ -49,18 +49,13 @@ string Solution::helper(string x, vector<string> &strs, int i){
     return helper(x.substr(0, j), strs, i+1);
 }
 
+//O(ln) O(1)
 string Solution::longestCommonPrefix_(vector<string> &strs){
     string ans = "";
     if(!strs.size()){
         return ans;
     }
-
-    int minLen = INT_MAX;
-    for(auto &i : strs){
-        minLen = i.size() < minLen ? i.size() : minLen;
-    }
-
-    for(int i=0; i<minLen; i++){
+    for(int i=0; i<strs[0].size(); i++){
         for(int j=1; j<strs.size(); j++){
             if(strs[j][i] != strs[j-1][i]){
                 return ans;
