@@ -11,7 +11,8 @@ add_executable(
 #        easy/TwoSum_1.h
 #        easy/ReverseInteger_7.h
 #        easy/PalindromeNumber_9.h
-        easy/RomanToInteger_13.h
+#        easy/RomanToInteger_13.h
+        easy/LongestCommonPrefix_14.h
 
 #        medium/AddTwoNumbers_2.h
         )
