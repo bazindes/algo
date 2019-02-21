@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/baz/VSProjects/algo/build",
+  "command": "/usr/bin/clang++    -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -std=gnu++14 -o CMakeFiles/algo.dir/main.cpp.o -c /Users/baz/VSProjects/algo/main.cpp",
+  "file": "/Users/baz/VSProjects/algo/main.cpp"
+}
+]
