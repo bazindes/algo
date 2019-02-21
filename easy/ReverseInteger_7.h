@@ -27,8 +27,9 @@
 
 using namespace std;
 
-class Solution {
-public:
+class Solution
+{
+  public:
     int reverse(int x);
     int reverse_(int x);
 
@@ -36,28 +37,34 @@ public:
 };
 
 //O(logn) O(1)
-int Solution::reverse(int x) {
+int Solution::reverse(int x)
+{
     if (x < 10 && x > -10)
         return x;
     int sign = x > 0 ? 1 : -1;
     long temp = x;
-    if (sign == -1) temp = -temp;
+    if (sign == -1)
+        temp = -temp;
     long ans = 0;
-    while (temp) {
+    while (temp)
+    {
         ans += (temp % 10);
         temp /= 10;
         ans *= 10;
     }
     ans = ans * sign / 10;
-    if (ans > INT_MAX || ans < INT_MIN) return 0;
+    if (ans > INT_MAX || ans < INT_MIN)
+        return 0;
     return ans;
 }
 
 //O(logn) O(1)
-int Solution::reverse_(int x) {
+int Solution::reverse_(int x)
+{
 
     long long int ans = 0;
-    while (x) {
+    while (x)
+    {
         ans = ans * 10 + x % 10;
         x /= 10;
     }
@@ -66,7 +73,8 @@ int Solution::reverse_(int x) {
     return ans;
 }
 
-void Solution::build() {
+void Solution::build()
+{
     int a = 1534236469;
     int b = -235;
     cout << reverse(a) << endl;

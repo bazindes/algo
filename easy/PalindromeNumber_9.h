@@ -22,8 +22,6 @@
 //
 //Coud you solve it without converting the integer to a string?
 
-
-
 #ifndef ALGO_PALINDROMENUMBER_9_H
 #define ALGO_PALINDROMENUMBER_9_H
 
@@ -32,32 +30,38 @@
 
 using namespace std;
 
-class Solution{
-public:
+class Solution
+{
+  public:
     bool isPalindrome(int x);
     void test();
 };
 
-bool Solution::isPalindrome(int x) {
+bool Solution::isPalindrome(int x)
+{
 
     string s = to_string(x);
 
     auto start = s.begin();
     auto end = s.end() - 1;
-    while(*start == *end){
-       start ++;
-       end --;
-//       cout << "start: " << *start << " end: " << *end << endl;
+    while (*start == *end)
+    {
+        start++;
+        end--;
+        //       cout << "start: " << *start << " end: " << *end << endl;
     }
     return end < start;
 }
 
-void Solution::test() {
+void Solution::test()
+{
     int x = 12321;
     int y = 123321;
     int z = 123435;
     string s = "abccba";
-    cout << isPalindrome(x) << endl << isPalindrome(y) << endl << isPalindrome(z) << endl;
+    cout << isPalindrome(x) << endl
+         << isPalindrome(y) << endl
+         << isPalindrome(z) << endl;
 }
 
 #endif //ALGO_PALINDROMENUMBER_9_H
