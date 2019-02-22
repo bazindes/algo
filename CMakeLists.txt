@@ -15,7 +15,8 @@ add_executable(
 #        easy/LongestCommonPrefix_14.h
 #        easy/ValidParentheses_20.h
 #        easy/MergeTwoSortedLists_21.h
-        easy/RemoveDuplicatesFromSortedArray_26.h
+#        easy/RemoveDuplicatesFromSortedArray_26.h
+        easy/RemoveElement_27.h
 
 #        medium/AddTwoNumbers_2.h
         )
