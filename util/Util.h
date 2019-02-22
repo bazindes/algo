@@ -8,27 +8,32 @@
 #include <iostream>
 
 using namespace std;
-namespace util {
+namespace util
+{
 
-    class ListNode {
-    public:
-        int val;
-        ListNode *next;
+class ListNode
+{
+  public:
+    int val;
+    ListNode *next;
 
-        ListNode() : val(0), next(nullptr) {}
-        ListNode(int x) : val(x), next(nullptr) {}
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+};
 
-    };
-
-    void traverse(ListNode* l){
-        while (l){
-            cout << l->val << " ";
-            l = l->next;
+void traverse(ListNode *l)
+{
+    while (l)
+    {
+        cout << l->val ;
+        l = l->next;
+        if(l){
+            cout << " -> ";
         }
-        cout << endl;
     }
-
+    cout << endl;
 }
 
+} // namespace util
 
 #endif //ALGO_UTIL_H

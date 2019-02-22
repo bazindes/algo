@@ -13,7 +13,8 @@ add_executable(
 #        easy/PalindromeNumber_9.h
 #        easy/RomanToInteger_13.h
 #        easy/LongestCommonPrefix_14.h
-        easy/ValidParentheses_20.h
+#        easy/ValidParentheses_20.h
+        easy/MergeTwoSortedLists_21.h
 
 #        medium/AddTwoNumbers_2.h
         )
