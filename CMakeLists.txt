@@ -12,7 +12,8 @@ add_executable(
 #        easy/ReverseInteger_7.h
 #        easy/PalindromeNumber_9.h
 #        easy/RomanToInteger_13.h
-        easy/LongestCommonPrefix_14.h
+#        easy/LongestCommonPrefix_14.h
+        easy/ValidParentheses_20.h
 
 #        medium/AddTwoNumbers_2.h
         )
