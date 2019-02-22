@@ -7,7 +7,8 @@
 // #include "./easy/RomanToInteger_13.h"
 // #include "./easy/LongestCommonPrefix_14.h"
 // #include "./easy/ValidParentheses_20.h"
-#include "./easy/MergeTwoSortedLists_21.h"
+// #include "./easy/MergeTwoSortedLists_21.h"
+#include "./easy/RemoveDuplicatesFromSortedArray_26.h"
 
 int main()
 {
