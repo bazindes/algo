@@ -9,12 +9,13 @@
 // #include "./easy/ValidParentheses_20.h"
 #include "./easy/MergeTwoSortedLists_21.h"
 
-int main() {
+int main()
+{
 
     Solution s;
-//    AddTwoNumbers_2 addTwoNumbers2;
-//    addTwoNumbers2.build();
-//    checkTheSize();
+    //    AddTwoNumbers_2 addTwoNumbers2;
+    //    addTwoNumbers2.build();
+    //    checkTheSize();
     s.test();
 
     return 0;
