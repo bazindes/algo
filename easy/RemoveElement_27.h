@@ -42,45 +42,66 @@
 
 using namespace std;
 
-class Solution{
-    public:
-        int removeElement(vector<int>& nums, int val);
-        int removeElement_(vector<int>& nums, int val);
-        void test();
+class Solution
+{
+  public:
+    int removeElement(vector<int> &nums, int val);
+    int removeElement_(vector<int> &nums, int val);
+    void test();
 };
 
 //O(n) O(1)
-int Solution::removeElement(vector<int> & nums, int val){
-    if(!nums.size()) {
+int Solution::removeElement(vector<int> &nums, int val)
+{
+    if (!nums.size())
+    {
         return 0;
     }
     int i = 0;
     int j = nums.size() - 1;
-    while(1){
-        while(i < nums.size() && nums[i] != val){ i ++; }
-        while(j && nums[j] == val){ j --; }
-        if(i >= j){ break; }
+    while (1)
+    {
+        while (i < nums.size() && nums[i] != val)
+        {
+            i++;
+        }
+        while (j && nums[j] == val)
+        {
+            j--;
+        }
+        if (i >= j)
+        {
+            break;
+        }
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
-        i ++;
-        j --;
-        
+        i++;
+        j--;
     }
     return i;
 }
 
-int Solution::removeElement_(vector<int> & nums, int val){
+int Solution::removeElement_(vector<int> &nums, int val)
+{
 
     return 0;
 }
 
-void Solution::test(){
-    vector<int> v1 = {3,2,2,3};
-    vector<int> v2 = {0,1,2,2,3,0,4,2};
+void Solution::test()
+{
+    vector<int> v1 = {3, 2, 2, 3};
+    vector<int> v2 = {0, 1, 2, 2, 3, 0, 4, 2};
 
     cout << removeElement(v1, 2) << endl;
-    for(auto i=v1.begin(); i<v1.end(); i++){ cout << *i << " "; };
-    cout << endl << removeElement(v2, 2) << endl;
-    for(auto i=v2.begin(); i<v2.end(); i++){ cout << *i << " "; };
+    for (auto i = v1.begin(); i < v1.end(); i++)
+    {
+        cout << *i << " ";
+    };
+    cout << endl
+         << removeElement(v2, 2) << endl;
+    for (auto i = v2.begin(); i < v2.end(); i++)
+    {
+        cout << *i << " ";
+    };
 }
