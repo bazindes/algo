@@ -21,7 +21,7 @@ class ListNode
     ListNode(int x) : val(x), next(nullptr) {}
 };
 
-void traverse(ListNode *l)
+void traverseListNode(ListNode *l)
 {
     while (l)
     {
