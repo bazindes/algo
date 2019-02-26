@@ -26,7 +26,7 @@ void traverseListNode(ListNode *l)
     while (l)
     {
         cout << l->val ;
-        l = l->next;
+        l = l->next; 
         if(l){
             cout << " -> ";
         }
