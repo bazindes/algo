@@ -17,7 +17,8 @@ add_executable(
 #        easy/MergeTwoSortedLists_21.h
 #        easy/RemoveDuplicatesFromSortedArray_26.h
 #        easy/RemoveElement_27.h
-        easy/ImplementstrStr_28.h
+        # easy/ImplementstrStr_28.h
+        easy/SearchInsertPosition_35.h
 
 #        medium/AddTwoNumbers_2.h
         )

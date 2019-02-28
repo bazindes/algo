@@ -10,7 +10,8 @@
 // #include "./easy/MergeTwoSortedLists_21.h"
 // #include "./easy/RemoveDuplicatesFromSortedArray_26.h"
 // #include "./easy/RemoveElement_27.h"
-#include "./easy/ImplementstrStr_28.h"
+// #include "./easy/ImplementstrStr_28.h"
+#include "./easy/SearchInsertPosition_35.h"
 
 int main()
 {
