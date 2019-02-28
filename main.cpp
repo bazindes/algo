@@ -11,7 +11,8 @@
 // #include "./easy/RemoveDuplicatesFromSortedArray_26.h"
 // #include "./easy/RemoveElement_27.h"
 // #include "./easy/ImplementstrStr_28.h"
-#include "./easy/SearchInsertPosition_35.h"
+// #include "./easy/SearchInsertPosition_35.h"
+#include "./easy/CountAndSay_38.h"
 
 int main()
 {

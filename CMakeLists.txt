@@ -18,7 +18,8 @@ add_executable(
 #        easy/RemoveDuplicatesFromSortedArray_26.h
 #        easy/RemoveElement_27.h
         # easy/ImplementstrStr_28.h
-        easy/SearchInsertPosition_35.h
+#        easy/SearchInsertPosition_35.h
+        easy/CountAndSay_38.h
 
 #        medium/AddTwoNumbers_2.h
         )
