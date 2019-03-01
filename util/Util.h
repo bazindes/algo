@@ -19,17 +19,17 @@ class ListNode
 };
 
 void traverseListNode(ListNode *l)
+{
+    while (l)
     {
-        while (l)
+        cout << l->val;
+        l = l->next;
+        if (l)
         {
-            cout << l->val;
-            l = l->next;
-            if (l)
-            {
-                cout << " -> ";
-            }
+            cout << " -> ";
         }
-        cout << endl;
     }
+    cout << endl;
+}
 
 } // namespace util
