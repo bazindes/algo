@@ -2,8 +2,6 @@
 // Created by baz on 2019-02-20.
 //
 
-#ifndef ALGO_PRIMITIVEDATATYPESIZES_H
-#define ALGO_PRIMITIVEDATATYPESIZES_H
 
 #include <iostream>
 using namespace std;
@@ -29,4 +27,3 @@ int checkTheSize(){
          << " bytes" <<endl;
 }
 
-#endif //ALGO_PRIMITIVEDATATYPESIZES_H

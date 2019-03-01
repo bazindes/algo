@@ -1,18 +1,18 @@
 #include <iostream>
 
-//#include "./medium/AddTwoNumbers_2.h"
-//#include "./util/PrimitiveDataTypeSizes.h"
-//#include "./easy/ReverseInteger_7.h"
-//#include "./easy/PalindromeNumber_9.h"
-//#include "./easy/RomanToInteger_13.h"
-//#include "./easy/LongestCommonPrefix_14.h"
-//#include "./easy/ValidParentheses_20.h"
-//#include "./easy/MergeTwoSortedLists_21.h"
-//#include "./easy/RemoveDuplicatesFromSortedArray_26.h"
-//#include "./easy/RemoveElement_27.h"
-//#include "./easy/ImplementstrStr_28.h"
-//#include "./easy/SearchInsertPosition_35.h"
-#include "./easy/CountAndSay_38.h"
+//#include "./medium/AddTwoNumbers_2.cpp"
+//#include "./util/PrimitiveDataTypeSizes.cpp"
+//#include "./easy/ReverseInteger_7.cpp"
+//#include "./easy/PalindromeNumber_9.cpp"
+//#include "./easy/RomanToInteger_13.cpp"
+//#include "./easy/LongestCommonPrefix_14.cpp"
+//#include "./easy/ValidParentheses_20.cpp"
+//#include "./easy/MergeTwoSortedLists_21.cpp"
+//#include "./easy/RemoveDuplicatesFromSortedArray_26.cpp"
+//#include "./easy/RemoveElement_27.cpp"
+//#include "./easy/ImplementstrStr_28.cpp"
+//#include "./easy/SearchInsertPosition_35.cpp"
+#include "easy/CountAndSay_38.cpp"
 
 int main()
 {

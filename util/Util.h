@@ -2,9 +2,6 @@
 // Created by baz on 2019-02-19.
 //
 
-#ifndef ALGO_UTIL_H
-#define ALGO_UTIL_H
-
 #include <iostream>
 
 using namespace std;
@@ -22,18 +19,17 @@ class ListNode
 };
 
 void traverseListNode(ListNode *l)
-{
-    while (l)
     {
-        cout << l->val ;
-        l = l->next; 
-        if(l){
-            cout << " -> ";
+        while (l)
+        {
+            cout << l->val;
+            l = l->next;
+            if (l)
+            {
+                cout << " -> ";
+            }
         }
+        cout << endl;
     }
-    cout << endl;
-}
 
 } // namespace util
-
-#endif //ALGO_UTIL_H

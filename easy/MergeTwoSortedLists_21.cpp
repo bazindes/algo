@@ -5,10 +5,7 @@
 // Input: 1->2->4, 1->3->4
 // Output: 1->1->2->3->4->4
 
-#ifndef ALGO_MERGETWOSORTEDLISTS_21_H
-#define ALGO_MERGETWOSORTEDLISTS_21_H
-
-#include "../util/Util.h"
+#include "../util/util.h"
 #include <iostream>
 
 using namespace util;
@@ -89,7 +86,6 @@ void Solution::test()
     n5.next = &n6;
     // traverse(&n1);
     // traverse(&n4);
-    traverse(mergeTwoLists(&n1, &n4));
+    traverseListNode(mergeTwoLists(&n1, &n4));
 }
 
-#endif // MERGETWOSORTEDLISTS_21.H

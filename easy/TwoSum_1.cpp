@@ -2,8 +2,6 @@
 // Created by baz on 2019-02-20.
 //
 
-#ifndef ALGO_TWOSUM_1_H
-#define ALGO_TWOSUM_1_H
 
 #include <vector>
 #include <map>
@@ -33,4 +31,3 @@ vector<int> Solution::twoSum(vector<int> &nums, int target){
     return ans;
 }
 
-#endif //ALGO_TWOSUM_1_H
