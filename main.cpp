@@ -13,15 +13,14 @@
 //#include "./easy/ImplementstrStr_28.cpp"
 //#include "./easy/SearchInsertPosition_35.cpp"
 #include "easy/CountAndSay_38.cpp"
+#include "prac/HeapAndStackMem.c"
 
-int main()
+int main(int argc, char *argv[])
 {
 
-    Solution s;
-    //    AddTwoNumbers_2 addTwoNumbers2;
-    //    addTwoNumbers2.build();
-    //    checkTheSize();
-    s.test();
+    // Solution s;
+    // s.test();
+    test(argc, argv);
 
     return 0;
 }
