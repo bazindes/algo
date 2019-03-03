@@ -6,13 +6,13 @@
 #include <map>
 using namespace std;
 
-class Solution
+class TwoSum_1
 {
   public:
     vector<int> twoSum(vector<int> &nums, int target);
 };
 
-vector<int> Solution::twoSum(vector<int> &nums, int target)
+vector<int> TwoSum_1::twoSum(vector<int> &nums, int target)
 {
     vector<int> ans;
     map<int, int> m;

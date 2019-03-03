@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-int checkTheSize()
+void checkTheSize()
 {
      cout << "Size of char : " << sizeof(char)
           << " byte" << endl;

@@ -50,7 +50,7 @@
 
 using namespace std;
 
-class Solution
+class RomanToInteger_13
 {
   public:
     int romanToInt(string s);
@@ -58,7 +58,7 @@ class Solution
     void test();
 };
 
-int Solution::romanToInt(string s)
+int RomanToInteger_13::romanToInt(string s)
 {
     map<char, int> m;
     m.insert({'I', 1});
@@ -113,7 +113,7 @@ int Solution::romanToInt(string s)
     return ans;
 }
 
-int Solution::romanToInt_(string s)
+int RomanToInteger_13::romanToInt_(string s)
 {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
@@ -160,7 +160,7 @@ int Solution::romanToInt_(string s)
     return ans;
 }
 
-void Solution::test()
+void RomanToInteger_13::test()
 {
     string s1 = "III";
     string s2 = "IV";

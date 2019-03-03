@@ -8,10 +8,9 @@
 #include "../util/util.h"
 #include <iostream>
 
-using namespace util;
 using namespace std;
 
-class Solution
+class MergeTwoSortedLists_21
 {
   public:
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2);
@@ -20,7 +19,7 @@ class Solution
 };
 
 //O(n) O(1)
-ListNode *Solution::mergeTwoLists(ListNode *l1, ListNode *l2)
+ListNode *MergeTwoSortedLists_21::mergeTwoLists(ListNode *l1, ListNode *l2)
 {
     if (!l1 || !l2)
     {
@@ -67,12 +66,12 @@ ListNode *Solution::mergeTwoLists(ListNode *l1, ListNode *l2)
     return temp->next;
 }
 
-ListNode *Solution::mergeTwoLists_(ListNode *l1, ListNode *l2)
+ListNode *MergeTwoSortedLists_21::mergeTwoLists_(ListNode *l1, ListNode *l2)
 {
     return nullptr;
 }
 
-void Solution::test()
+void MergeTwoSortedLists_21::test()
 {
     ListNode n1(1);
     ListNode n2(2);

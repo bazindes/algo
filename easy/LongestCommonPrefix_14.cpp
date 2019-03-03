@@ -21,7 +21,7 @@
 
 using namespace std;
 
-class Solution
+class LongestCommonPrefix_14
 {
   public:
     string longestCommonPrefix(vector<string> &strs);
@@ -33,14 +33,14 @@ class Solution
 };
 
 // heap overflow
-string Solution::longestCommonPrefix(vector<string> &strs)
+string LongestCommonPrefix_14::longestCommonPrefix(vector<string> &strs)
 {
     if (!strs.size())
         return "";
     return helper(strs[0], strs, 1);
 }
 
-string Solution::helper(string x, vector<string> &strs, int i)
+string LongestCommonPrefix_14::helper(string x, vector<string> &strs, int i)
 {
     if (x.empty() || i == strs.size())
         return x;
@@ -57,7 +57,7 @@ string Solution::helper(string x, vector<string> &strs, int i)
 }
 
 //O(ln) O(1)
-string Solution::longestCommonPrefix_(vector<string> &strs)
+string LongestCommonPrefix_14::longestCommonPrefix_(vector<string> &strs)
 {
     string ans = "";
     if (!strs.size())
@@ -79,7 +79,7 @@ string Solution::longestCommonPrefix_(vector<string> &strs)
     return ans;
 }
 
-void Solution::test()
+void LongestCommonPrefix_14::test()
 {
     vector<string> v1 = {"flower", "flow", "flight"};
     vector<string> v2 = {"dog", "racecar", "car"};

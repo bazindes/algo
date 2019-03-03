@@ -2,12 +2,8 @@
 // Created by baz on 2019-02-19.
 //
 
-#ifndef ALGO_ADDTWONUMBERS_2_H
-#define ALGO_ADDTWONUMBERS_2_H
 
-#include "../util/Util.h"
-
-using namespace util;
+#include "../util/util.h"
 
 class AddTwoNumbers_2 {
 public:
@@ -36,9 +32,9 @@ void AddTwoNumbers_2::build() {
     l7.next = &l8;
     l8.next = &l9;
 
-    traverse(&l);
-    traverse(&l5);
-    traverse(addTwoNumbers_(&l, &l5));
+    traverseListNode(&l);
+    traverseListNode(&l5);
+    traverseListNode(addTwoNumbers_(&l, &l5));
 
 }
 
@@ -128,6 +124,3 @@ ListNode* AddTwoNumbers_2::addTwoNumbers(ListNode *l1, ListNode *l2) {
     return a -> next;
 }
 
-
-
-#endif //ALGO_ADDTWONUMBERS_2_H

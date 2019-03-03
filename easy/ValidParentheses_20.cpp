@@ -33,7 +33,7 @@
 
 using namespace std;
 
-class Solution
+class ValidParentheses_20
 {
   public:
     bool isValid(string s);
@@ -44,7 +44,7 @@ class Solution
     char exch(char c);
 };
 
-bool Solution::isValid(string s)
+bool ValidParentheses_20::isValid(string s)
 {
     stack<char> st;
     auto i = s.begin();
@@ -69,7 +69,7 @@ bool Solution::isValid(string s)
     return !st.size();
 }
 
-char Solution::exch(char c)
+char ValidParentheses_20::exch(char c)
 {
     switch (c)
     {
@@ -84,12 +84,12 @@ char Solution::exch(char c)
     }
 }
 
-bool Solution::isValid_(string s)
+bool ValidParentheses_20::isValid_(string s)
 {
     return 0;
 }
 
-void Solution::test()
+void ValidParentheses_20::test()
 {
     string s1 = "()";
     string s2 = "()[]{}";

@@ -38,7 +38,7 @@
 
 using namespace std;
 
-class Solution
+class RemoveDuplicatesFromSortedArray_26
 {
   public:
     int removeDuplicates(vector<int> &nums);
@@ -47,7 +47,7 @@ class Solution
 };
 
 //O(n) O(1)
-int Solution::removeDuplicates(vector<int> &nums)
+int RemoveDuplicatesFromSortedArray_26::removeDuplicates(vector<int> &nums)
 {
     int ans = 0;
     if (!nums.size())
@@ -70,12 +70,12 @@ int Solution::removeDuplicates(vector<int> &nums)
     return ans + 1;
 }
 
-int Solution::removeDuplicates_(vector<int> &nums)
+int RemoveDuplicatesFromSortedArray_26::removeDuplicates_(vector<int> &nums)
 {
     return 0;
 }
 
-void Solution::test()
+void RemoveDuplicatesFromSortedArray_26::test()
 {
     vector<int> v1 = {1, 1, 2};
     vector<int> v2 = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};

@@ -27,7 +27,7 @@
 
 using namespace std;
 
-class Solution
+class CountAndSay_38
 {
   private:
     string helper(string s)
@@ -57,7 +57,7 @@ class Solution
     void test();
 };
 
-string Solution::countAndSay(int n)
+string CountAndSay_38::countAndSay(int n)
 {
     if (n == 1)
     {
@@ -67,7 +67,7 @@ string Solution::countAndSay(int n)
 }
 
 //O(n) O(1)
-string Solution::countAndSay_(int n)
+string CountAndSay_38::countAndSay_(int n)
 {
     string res = "1", cur = "1";
     while (--n)
@@ -94,7 +94,7 @@ string Solution::countAndSay_(int n)
     return res;
 }
 
-void Solution::test()
+void CountAndSay_38::test()
 {
     cout << countAndSay(1) << endl;
     cout << countAndSay(4) << endl;

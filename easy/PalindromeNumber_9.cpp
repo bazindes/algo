@@ -30,14 +30,14 @@
 
 using namespace std;
 
-class Solution
+class PalindromeNumber_9
 {
   public:
     bool isPalindrome(int x);
     void test();
 };
 
-bool Solution::isPalindrome(int x)
+bool PalindromeNumber_9::isPalindrome(int x)
 {
 
     string s = to_string(x);
@@ -53,7 +53,7 @@ bool Solution::isPalindrome(int x)
     return end < start;
 }
 
-void Solution::test()
+void PalindromeNumber_9::test()
 {
     int x = 12321;
     int y = 123321;

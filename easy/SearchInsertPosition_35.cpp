@@ -24,7 +24,7 @@
 #include <vector>
 using namespace std;
 
-class Solution
+class SearchInsertPosition_35
 {
 public:
   int searchInsert(vector<int> &nums, int target);
@@ -32,7 +32,7 @@ public:
   void test();
 };
 
-int Solution::searchInsert(vector<int> &nums, int target)
+int SearchInsertPosition_35::searchInsert(vector<int> &nums, int target)
 {
   if (nums.empty())
   {
@@ -62,7 +62,7 @@ int Solution::searchInsert(vector<int> &nums, int target)
   return i;
 }
 
-void Solution::test()
+void SearchInsertPosition_35::test()
 {
   vector<int> v1 = {1, 3, 5, 6};
   cout << searchInsert(v1, 5) << endl;

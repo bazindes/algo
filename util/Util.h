@@ -1,24 +1,15 @@
 //
 // Created by baz on 2019-02-19.
 //
+#ifndef UTIL_H
+#define UTIL_H
 
 #include <iostream>
+#include "mtype/ListNode.h"
 
 using namespace std;
-namespace util
-{
 
-class ListNode
-{
-  public:
-    int val;
-    ListNode *next;
-
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-};
-
-void traverseListNode(ListNode *l)
+inline void traverseListNode(ListNode *l)
 {
     while (l)
     {
@@ -32,4 +23,4 @@ void traverseListNode(ListNode *l)
     cout << endl;
 }
 
-} // namespace util
+#endif

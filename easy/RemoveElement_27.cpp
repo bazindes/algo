@@ -42,7 +42,7 @@
 
 using namespace std;
 
-class Solution
+class RemoveElement_27
 {
   public:
     int removeElement(vector<int> &nums, int val);
@@ -51,7 +51,7 @@ class Solution
 };
 
 //O(n) O(1)
-int Solution::removeElement(vector<int> &nums, int val)
+int RemoveElement_27::removeElement(vector<int> &nums, int val)
 {
     if (!nums.size())
     {
@@ -82,13 +82,13 @@ int Solution::removeElement(vector<int> &nums, int val)
     return i;
 }
 
-int Solution::removeElement_(vector<int> &nums, int val)
+int RemoveElement_27::removeElement_(vector<int> &nums, int val)
 {
 
     return 0;
 }
 
-void Solution::test()
+void RemoveElement_27::test()
 {
     vector<int> v1 = {3, 2, 2, 3};
     vector<int> v2 = {0, 1, 2, 2, 3, 0, 4, 2};

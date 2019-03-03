@@ -27,7 +27,7 @@
 
 using namespace std;
 
-class Solution
+class ReverseInteger_7
 {
   public:
     int reverse(int x);
@@ -37,7 +37,7 @@ class Solution
 };
 
 //O(logn) O(1)
-int Solution::reverse(int x)
+int ReverseInteger_7::reverse(int x)
 {
     if (x < 10 && x > -10)
         return x;
@@ -59,7 +59,7 @@ int Solution::reverse(int x)
 }
 
 //O(logn) O(1)
-int Solution::reverse_(int x)
+int ReverseInteger_7::reverse_(int x)
 {
 
     long long int ans = 0;
@@ -73,7 +73,7 @@ int Solution::reverse_(int x)
     return ans;
 }
 
-void Solution::build()
+void ReverseInteger_7::build()
 {
     int a = 1534236469;
     int b = -235;

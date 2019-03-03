@@ -22,7 +22,7 @@
 
 using namespace std;
 
-class Solution
+class ImplementstrStr_28
 {
   public:
     int strStr(string haystack, string needle);
@@ -56,7 +56,7 @@ class Solution
     }
 };
 
-int Solution::strStr(string haystack, string needle)
+int ImplementstrStr_28::strStr(string haystack, string needle)
 {
     int ans = 0;
     if (needle.empty())
@@ -95,7 +95,7 @@ out:
     return -1;
 }
 
-int Solution::strStr_(string haystack, string needle)
+int ImplementstrStr_28::strStr_(string haystack, string needle)
 {
     int m = haystack.size(), n = needle.size();
     for (int i = 0; i <= m - n; i++)
@@ -116,7 +116,7 @@ int Solution::strStr_(string haystack, string needle)
     return -1;
 }
 
-int Solution::strStrKMP(string haystack, string needle)
+int ImplementstrStr_28::strStrKMP(string haystack, string needle)
 {
     int m = haystack.size(), n = needle.size();
     if (!n)
@@ -145,7 +145,7 @@ int Solution::strStrKMP(string haystack, string needle)
     return -1;
 }
 
-void Solution::test()
+void ImplementstrStr_28::test()
 {
     cout << strStr("hello", "el") << endl;
     cout << strStr_("hello", "el") << endl;
