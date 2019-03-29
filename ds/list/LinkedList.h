@@ -20,10 +20,11 @@ class LinkedList {
 public:
   int size;
   LinkedListNode *head;
-  LinkedListNode *tail;
 
   LinkedList();
   ~LinkedList();
+  LinkedList(int x, int *nums);
+  void printLinkedList();
 };
 
 #endif

@@ -1,32 +1,19 @@
+/*
+    main.cpp
+    Created by: baz
+    Date: 2019-03-28 21:10
+*/
+
+#include "ds/list/LinkedList.h"
 #include <iostream>
 
-//#include "medium/AddTwoNumbers_2.h"
-//#include "./util/PrimitiveDataTypeSizes.cpp"
-//#include "./easy/ReverseInteger_7.cpp"
-//#include "./easy/PalindromeNumber_9.cpp"
-//#include "./easy/RomanToInteger_13.cpp"
-//#include "./easy/LongestCommonPrefix_14.cpp"
-//#include "./easy/ValidParentheses_20.cpp"
-//#include "easy/MergeTwoSortedLists_21.cpp"
-//#include "./easy/RemoveDuplicatesFromSortedArray_26.cpp"
-//#include "./easy/RemoveElement_27.cpp"
-//#include "./easy/ImplementstrStr_28.cpp"
-//#include "./easy/SearchInsertPosition_35.cpp"
-// #include "easy/CountAndSay_38.cpp"
-// #include "prac/HeapAndStackMem.c"
-#include "prac/StructUnionEnum.c"
+using namespace std;
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
+  int nums[] = {1, 2, 3, 5};
+  LinkedList list(4, nums);
 
-    // Solution s;
-    // s.test();
-    // test(argc, argv);
-    // AddTwoNumbers_2 a;
-    // a.build();
-    // MergeTwoSortedLists_21 m;
-    // m.test();
-
-    return 0;
+  list.printLinkedList();
+  return 0;
 }
 //
