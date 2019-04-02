@@ -5,19 +5,31 @@
 */
 
 #include <iostream>
-#include "ds/list/LinkedList.h"
-#include "prac/InvertLinkedList.cpp"
+// #include "ds/list/LinkedList.h"
+// #include "prac/InvertLinkedList.cpp"
+#include "lc/easy/TwoSum3DatastructureDesign_170.h"
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
-  int nums[] = {1, 2, 3, 5};
-  LinkedList list(4, nums);
-  list.printLinkedList();
-
-  invert(&list);
-
-  list.printLinkedList();
+  // int nums[] = {1, 2, 3, 5};
+  // LinkedList list(4, nums);
+  // list.printLinkedList();
+  // invert(&list);
+  // list.printLinkedList();
+  TwoSum_ *ts = new TwoSum_();
+ 
+  ts->add(1);
+  ts->add(1);
+  cout << ts->find(0) << endl;
+  cout << ts->find(1) << endl;
+  cout << ts->find(2) << endl;
+  ts->add(-1);
+  cout << ts->find(0) << endl;
+  cout << ts->find(1) << endl;
+  cout << ts->find(-2) << endl;
+  ts->add(-1);
+  cout << ts->find(-2) << endl;
   return 0;
 }
 //
