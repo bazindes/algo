@@ -19,13 +19,13 @@ LinkedList *invert(LinkedList *list) {
   LinkedListNode *n;
   LinkedListNode *prev;
 
-  while(cur){
-    n = cur -> next;
-    cur -> next = prev;
+  while (cur) {
+    n = cur->next;
+    cur->next = prev;
     prev = cur;
     cur = n;
   }
 
-  list -> head = prev;
+  list->head = prev;
   return list;
 }
