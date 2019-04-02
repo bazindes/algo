@@ -22,9 +22,9 @@ find(3) -> true
 find(6) -> false
 */
 
-#include "TwoSum3DatastructureDesign_170.h"
 #include <map>
 #include <iostream>
+#include <unordered_set>
 using namespace std;
 
 // TLE
@@ -48,6 +48,17 @@ using namespace std;
 //    */
 //   bool find(int value) { return sums.find(value) != sums.end(); }
 // };
+
+// my ans O(n) O(n)
+class TwoSum {
+public:
+  map<int, int> nums;
+  TwoSum() {}
+  ~TwoSum() {}
+  void add(int number);
+  bool find(int value);
+};
+
 void pnums(map<int, int> *m, bool t){
   char* s = "before";
   if(t) s = "after";
@@ -81,3 +92,23 @@ bool TwoSum::find(int value) {
   }
   return false;
 }
+
+// optimal ans, O(n) O(n)
+class TwoSum_ {
+    unordered_multiset<int> nums;
+public:
+    TwoSum_(){}
+    ~TwoSum_(){}
+    void add(int number) {
+        nums.insert(number);
+    }
+    bool find(int value) {
+        for (int i : nums) {
+            int count = i == value - i ? 1 : 0;
+            if (nums.count(value - i) > count) {
+                return true;
+            }
+        }
+        return false;
+    }
+};

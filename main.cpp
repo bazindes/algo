@@ -7,7 +7,7 @@
 #include <iostream>
 // #include "ds/list/LinkedList.h"
 // #include "prac/InvertLinkedList.cpp"
-#include "lc/easy/TwoSum3DatastructureDesign_170.h"
+#include "lc/easy/TwoSum3DatastructureDesign_170.cpp"
 
 using namespace std;
 
