@@ -17,19 +17,19 @@ int main(int argc, char *argv[]) {
   // list.printLinkedList();
   // invert(&list);
   // list.printLinkedList();
-  TwoSum_ *ts = new TwoSum_();
+  // TwoSum_ *ts = new TwoSum_();
  
-  ts->add(1);
-  ts->add(1);
-  cout << ts->find(0) << endl;
-  cout << ts->find(1) << endl;
-  cout << ts->find(2) << endl;
-  ts->add(-1);
-  cout << ts->find(0) << endl;
-  cout << ts->find(1) << endl;
-  cout << ts->find(-2) << endl;
-  ts->add(-1);
-  cout << ts->find(-2) << endl;
+  // ts->add(1);
+  // ts->add(1);
+  // cout << ts->find(0) << endl;
+  // cout << ts->find(1) << endl;
+  // cout << ts->find(2) << endl;
+  // ts->add(-1);
+  // cout << ts->find(0) << endl;
+  // cout << ts->find(1) << endl;
+  // cout << ts->find(-2) << endl;
+  // ts->add(-1);
+  // cout << ts->find(-2) << endl;
   return 0;
 }
 //

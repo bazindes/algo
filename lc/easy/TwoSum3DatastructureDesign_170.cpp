@@ -22,8 +22,8 @@ find(3) -> true
 find(6) -> false
 */
 
-#include <map>
 #include <iostream>
+#include <map>
 #include <unordered_set>
 using namespace std;
 
@@ -59,11 +59,12 @@ public:
   bool find(int value);
 };
 
-void pnums(map<int, int> *m, bool t){
-  char* s = "before";
-  if(t) s = "after";
+void pnums(map<int, int> *m, bool t) {
+  char *s = "before";
+  if (t)
+    s = "after";
   cout << "nums " << s << ", size: " << m->size() << ", data: ";
-  for(auto i : *m) {
+  for (auto i : *m) {
     cout << "(" << i.first << "," << i.second << ") ";
   }
   cout << endl;
@@ -82,33 +83,33 @@ void TwoSum::add(int number) {
 bool TwoSum::find(int value) {
   for (auto i : nums) {
     int key = i.first;
-    nums[key]--;
     auto tar = nums.find(value - key);
-    if (tar != nums.end() && tar->second > 0){
-      nums[key]++;
-      return true;
+    if (tar != nums.end() && tar->second > 0) {
+      if (tar->first == key) {
+        if (tar->second > 1)
+          return true;
+      } else
+        return true;
     }
-    nums[key]++;
   }
   return false;
 }
 
 // optimal ans, O(n) O(n)
 class TwoSum_ {
-    unordered_multiset<int> nums;
+  unordered_multiset<int> nums;
+
 public:
-    TwoSum_(){}
-    ~TwoSum_(){}
-    void add(int number) {
-        nums.insert(number);
+  TwoSum_() {}
+  ~TwoSum_() {}
+  void add(int number) { nums.insert(number); }
+  bool find(int value) {
+    for (int i : nums) {
+      int count = i == value - i ? 1 : 0;
+      if (nums.count(value - i) > count) {
+        return true;
+      }
     }
-    bool find(int value) {
-        for (int i : nums) {
-            int count = i == value - i ? 1 : 0;
-            if (nums.count(value - i) > count) {
-                return true;
-            }
-        }
-        return false;
-    }
+    return false;
+  }
 };
