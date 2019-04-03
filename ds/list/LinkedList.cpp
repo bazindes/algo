@@ -33,10 +33,9 @@ LinkedList::LinkedList(int x, int *nums) {
 }
 
 void LinkedList::printLinkedList() {
-  int n = size;
   LinkedListNode *cur = head;
   
-  while (n--) {
+  while (cur) {
     cout << " | ";
     cout << cur->val;
     cur = cur->next;
