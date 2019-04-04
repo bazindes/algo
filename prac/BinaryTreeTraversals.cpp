@@ -1,17 +1,27 @@
+/*
+  BinaryTreeTraversals.cpp
+  Created by: baz
+  Date: 2019-04-04 02:40
+*/
+
 #include <algorithm>
 #include <cstdio>
 #include <queue>
 #include <stack>
+
 using namespace std;
+
 struct Node {
   int key;
   int s; // only used by Schorr-Waite
   Node *l, *r;
+  Node() : key(0), l(nullptr), r(nullptr), s(0) {}
   Node(int key, Node *l, Node *r) : key(key), l(l), r(r), s(0) {}
   void visit() const {
     printf("%d\n", key);
   }
 };
+
 enum Type { PREORDER, INORDER, POSTORDER };
 /*
 preorder模拟栈版：栈中存放的节点`x`表示之后待遍历`x`的子树。
