@@ -7,4 +7,5 @@ add_executable(
         algo 
         main.cpp
         ds/list/LinkedList.cpp
+        ds/list/DoubleLinkedList.cpp
 )
