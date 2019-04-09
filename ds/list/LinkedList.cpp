@@ -6,8 +6,6 @@
 #include "LinkedList.h"
 #include <iostream>
 
-using namespace std;
-
 LinkedListNode::LinkedListNode() : val(0), next(nullptr) {}
 LinkedListNode::LinkedListNode(int x) : val(x), next(nullptr) {}
 LinkedListNode::~LinkedListNode() {}
@@ -36,10 +34,10 @@ void LinkedList::printLinkedList() {
   LinkedListNode *cur = head;
   
   while (cur) {
-    cout << " | ";
-    cout << cur->val;
+    std::cout << " | ";
+    std::cout << cur->val;
     cur = cur->next;
   }
-  cout << " |" << endl;
+  std::cout << " |" << std::endl;
   
 }
