@@ -8,4 +8,5 @@ add_executable(
         main.cpp
         ds/list/LinkedList.cpp
         ds/list/DoubleLinkedList.cpp
+        ds/tree/BinaryTree.cpp
 )

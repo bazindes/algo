@@ -3,11 +3,12 @@
 //
 #ifndef UTIL_H
 #define UTIL_H
-
 #include <iostream>
 
-using namespace std;
+namespace util {
 
+template <typename T> void preOrderTraversal(T &t) {}
 
+} // namespace util
 
 #endif
