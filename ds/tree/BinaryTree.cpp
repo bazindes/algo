@@ -21,32 +21,32 @@ BinaryTree::TreeNode *BinaryTree::buildBT(int nums[], int n, int i) {
   return cur;
 }
 
-void BinaryTree::inOrderTraversal(TreeNode *root) {
+void BinaryTree::inOrderTraversal(TreeNode *root, void (*func)(BinaryTree::TreeNode *)) {
   if (!root)
     return;
-  inOrderTraversal(root->left);
-  std::cout << root->val << " | ";
-  inOrderTraversal(root->right);
-}
-
-void BinaryTree::preOrderTraversal(TreeNode *root) {
-  if (!root)
-    return;
-  std::cout << root->val << " | ";
-  preOrderTraversal(root->left);
-  preOrderTraversal(root->right);
-}
-
-void BinaryTree::postOrderTraversal(TreeNode *root) {
-  if (!root)
-    return;
-  postOrderTraversal(root->left);
-  postOrderTraversal(root->right);
-  std::cout << root->val << " | ";
-}
-
-void BinaryTree::printTree(void (*func)(TreeNode *), TreeNode *root) {
-  std::cout << "| ";
+  inOrderTraversal(root->left, func);
   func(root);
+  inOrderTraversal(root->right, func);
+}
+
+void BinaryTree::preOrderTraversal(TreeNode *root, void (*func)(BinaryTree::TreeNode *)) {
+  if (!root)
+    return;
+  func(root);
+  preOrderTraversal(root->left, func);
+  preOrderTraversal(root->right, func);
+}
+
+void BinaryTree::postOrderTraversal(TreeNode *root, void (*func)(BinaryTree::TreeNode *)) {
+  if (!root)
+    return;
+  postOrderTraversal(root->left, func);
+  postOrderTraversal(root->right, func);
+  func(root);
+}
+
+void BinaryTree::printTree(void (*func)(TreeNode *, void (*func)(BinaryTree::TreeNode *)), TreeNode *root) {
+  std::cout << "| ";
+  func(root, [](BinaryTree::TreeNode *x){ std::cout << x->val << " | " ;});
   std::cout << std::endl;
 }

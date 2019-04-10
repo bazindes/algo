@@ -3,7 +3,9 @@
 //
 
 
-#include "../util/util.h"
+#include "ds/list/LinkedList.h"
+
+typedef LinkedListNode ListNode;
 
 class AddTwoNumbers_2 {
 public:
@@ -32,9 +34,9 @@ void AddTwoNumbers_2::build() {
     l7.next = &l8;
     l8.next = &l9;
 
-    traverseListNode(&l);
-    traverseListNode(&l5);
-    traverseListNode(addTwoNumbers_(&l, &l5));
+    // traverseListNode(&l);
+    // traverseListNode(&l5);
+    // traverseListNode(addTwoNumbers_(&l, &l5));
 
 }
 

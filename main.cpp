@@ -21,9 +21,9 @@ int main(int argc, char *argv[]) {
 
   int nums[] = {1, 2, 3, 4, 5};
   BinaryTree::TreeNode *root = BinaryTree::buildBT(nums, 5, 0);
-  BinaryTree::printTree(BinaryTree::preOrderTraversal, root);
+  // BinaryTree::printTree(BinaryTree::preOrderTraversal, root);
   BinaryTree::printTree(BinaryTree::inOrderTraversal, root);
-  BinaryTree::printTree(BinaryTree::postOrderTraversal, root);
+  // BinaryTree::printTree(BinaryTree::postOrderTraversal, root);
 
   // vector<vector<int>> costs = {{17,2,17},{16,16,5},{14,3,19}};
   // costs = {{3,5,3},{6,17,6},{7,13,18},{9,10,18}};

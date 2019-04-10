@@ -20,11 +20,11 @@ struct TreeNode {
 
 TreeNode* buildBT(int nums[], int n, int i);
 
-void printTree(void (*func)(TreeNode *), TreeNode *root);
+void printTree(void (*func)(TreeNode *, void (*func)(TreeNode *)), TreeNode *root);
 
-void inOrderTraversal(TreeNode *root);
-void preOrderTraversal(TreeNode *root);
-void postOrderTraversal(TreeNode *root);
+void inOrderTraversal(TreeNode *root, void (*func)(TreeNode *));
+void preOrderTraversal(TreeNode *root, void (*func)(TreeNode *));
+void postOrderTraversal(TreeNode *root, void (*func)(TreeNode *));
 
 } // namespace BT
 
