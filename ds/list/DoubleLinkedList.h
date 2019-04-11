@@ -7,31 +7,22 @@
 #ifndef DOUBLELINKEDLIST_H
 #define DOUBLELINKEDLIST_H
 
-#include <stdlib.h>
-
-struct DoubleLinkedListNode;
+namespace DoubleLinkedList {
 
 // define DoubleLinkedListNode
-class DoubleLinkedListNode {
+struct ListNode {
 public:
   int val;
-  struct DoubleLinkedListNode *prev;
-  struct DoubleLinkedListNode *next;
+  struct ListNode *prev;
+  struct ListNode *next;
 
-  DoubleLinkedListNode();
-  DoubleLinkedListNode(int);
-  ~DoubleLinkedListNode();
+  ListNode();
+  ListNode(int);
+  ~ListNode();
 };
 
-// define DoubleLinkedList
-class DoubleLinkedList {
-public:
-  int size;
-  DoubleLinkedListNode *head;
-  DoubleLinkedListNode *tail;
+void printList(ListNode *);
 
-  DoubleLinkedList();
-  ~DoubleLinkedList();
-};
+} // namespace DoubleLinkedList
 
 #endif

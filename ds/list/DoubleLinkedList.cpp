@@ -5,12 +5,20 @@
 */
 
 #include "DoubleLinkedList.h"
+#include <iostream>
 
-DoubleLinkedListNode::DoubleLinkedListNode()
-    : val(0), prev(nullptr), next(nullptr) {}
-DoubleLinkedListNode::DoubleLinkedListNode(int x)
+DoubleLinkedList::ListNode::ListNode() : val(0), prev(nullptr), next(nullptr) {}
+DoubleLinkedList::ListNode::ListNode(int x)
     : val(x), prev(nullptr), next(nullptr) {}
-DoubleLinkedListNode::~DoubleLinkedListNode() {}
+DoubleLinkedList::ListNode::~ListNode() {}
 
-DoubleLinkedList::DoubleLinkedList() : size(0), head(nullptr), tail(nullptr) {}
-DoubleLinkedList::~DoubleLinkedList() {}
+void DoubleLinkedList::printList(DoubleLinkedList::ListNode *head) {
+    ListNode *cur = head;
+    std::cout << " | ";
+    while (cur)
+    {
+        std::cout << cur -> val << " | ";
+        cur = cur -> next;
+    }
+    std::cout << std::endl;
+}

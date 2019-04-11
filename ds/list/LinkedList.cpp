@@ -6,38 +6,31 @@
 #include "LinkedList.h"
 #include <iostream>
 
-LinkedListNode::LinkedListNode() : val(0), next(nullptr) {}
-LinkedListNode::LinkedListNode(int x) : val(x), next(nullptr) {}
-LinkedListNode::~LinkedListNode() {}
+LinkedList::ListNode::ListNode():val(0), next(nullptr) {}
+LinkedList::ListNode::ListNode(int x):val(x), next(nullptr) {}
+LinkedList::ListNode::~ListNode() {}
 
-LinkedList::LinkedList() : size(0), head(nullptr) {}
-LinkedList::~LinkedList() {}
+void LinkedList::printLinkedList(LinkedList::ListNode *head) {
+  LinkedList::ListNode *cur = head;
 
-LinkedList::LinkedList(int x, int *nums) {
-    size = x;
-    head = new LinkedListNode(*nums);
-    nums ++;
-
-    LinkedListNode *cur = head;
-    LinkedListNode *node;
-
-    while(-- x){
-        node = new LinkedListNode(*nums);
-        cur->next = node;
-        cur = cur -> next;
-        nums ++;
-    }
-
-}
-
-void LinkedList::printLinkedList() {
-  LinkedListNode *cur = head;
-  
   while (cur) {
     std::cout << " | ";
     std::cout << cur->val;
     cur = cur->next;
   }
   std::cout << " |" << std::endl;
-  
+}
+
+LinkedList::ListNode *LinkedList::createLinkedList(int nums[], int n) {
+  if(nums){
+    ListNode *cur = new ListNode;
+    ListNode *dummy = cur;
+    for(int i = 0; i < n; ++ i){
+      ListNode *temp = new ListNode(nums[i]);
+      dummy -> next = temp;
+      dummy = dummy -> next;
+    }
+    return cur -> next;
+  }
+  return nullptr;
 }

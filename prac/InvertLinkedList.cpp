@@ -14,18 +14,17 @@
 //   return cur;
 // }
 
-LinkedList *invert(LinkedList *list) {
-  LinkedListNode *cur = list->head;
-  LinkedListNode *n;
-  LinkedListNode *prev;
+LinkedList::ListNode *invert(LinkedList::ListNode *head) {
+  LinkedList::ListNode *cur = head;
+  LinkedList::ListNode *nxt = nullptr;
+  LinkedList::ListNode *prev = nullptr;
 
   while (cur) {
-    n = cur->next;
+    nxt = cur->next;
     cur->next = prev;
     prev = cur;
-    cur = n;
+    cur = nxt;
   }
 
-  list->head = prev;
-  return list;
+  return prev;
 }

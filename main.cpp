@@ -6,8 +6,8 @@
 
 #include <iostream>
 #include <vector>
-// #include "ds/list/LinkedList.h"
-// #include "ds/list/DoubleLinkedList.h"
+#include "ds/list/LinkedList.h"
+#include "ds/list/DoubleLinkedList.h"
 #include "ds/tree/BinaryTree.h"
 
 // #include "prac/InvertLinkedList.cpp"
@@ -19,10 +19,17 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 
-  int nums[] = {1, 2, 3, 4, 5};
-  BinaryTree::TreeNode *root = BinaryTree::buildBT(nums, 5, 0);
+  
+
+  // int nums[] = {1, 2, 3, 4, 5};
+  // LinkedList::ListNode *l = LinkedList::createLinkedList(nums, 5);
+  // LinkedList::printLinkedList(l);
+  // LinkedList::printLinkedList(invert(l));
+
+  // int nums[] = {1, 2, 3, 4, 5};
+  // BinaryTree::TreeNode *root = BinaryTree::buildBT(nums, 5, 0);
   // BinaryTree::printTree(BinaryTree::preOrderTraversal, root);
-  BinaryTree::printTree(BinaryTree::inOrderTraversal, root);
+  // BinaryTree::printTree(BinaryTree::inOrderTraversal, root);
   // BinaryTree::printTree(BinaryTree::postOrderTraversal, root);
 
   // vector<vector<int>> costs = {{17,2,17},{16,16,5},{14,3,19}};

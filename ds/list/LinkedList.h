@@ -6,25 +6,20 @@
 #ifndef LISTNODE_H
 #define LISTNODE_H
 
-class LinkedListNode {
-public:
+namespace LinkedList {
+
+struct ListNode {
   int val;
-  LinkedListNode *next;
+  ListNode *next;
 
-  LinkedListNode();
-  LinkedListNode(int x);
-  ~LinkedListNode();
+  ListNode();
+  ListNode(int);
+  ~ListNode();
 };
 
-class LinkedList {
-public:
-  int size;
-  LinkedListNode *head;
+void printLinkedList(ListNode *);
+ListNode *createLinkedList(int nums[], int n);
 
-  LinkedList();
-  ~LinkedList();
-  LinkedList(int x, int *nums);
-  void printLinkedList();
-};
+} // namespace LinkedList
 
 #endif
