@@ -6,7 +6,7 @@
 
 #include <vector>
 
-namespace DirectedGraph {
+namespace Graph {
 
 struct GraphNode {
   int val;

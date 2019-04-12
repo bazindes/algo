@@ -9,4 +9,5 @@ add_executable(
         ds/list/LinkedList.cpp
         ds/list/DoubleLinkedList.cpp
         ds/tree/BinaryTree.cpp
+        ds/graph/DirectedGraph.cpp
 )
