@@ -10,7 +10,7 @@ namespace Graph {
 
 struct GraphNode {
   int val;
-  std::vector<GraphNode> neighbors;
+  std::vector<GraphNode> *neighbors;
 
   GraphNode();
   GraphNode(int x);

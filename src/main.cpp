@@ -4,22 +4,17 @@
     Date: 2019-03-28 21:10
 */
 
-#include <iostream>
-#include <vector>
-#include "ds/list/LinkedList.h"
-#include "ds/list/DoubleLinkedList.h"
-#include "ds/tree/BinaryTree.h"
+#include "util/pch.h"
 
 // #include "prac/InvertLinkedList.cpp"
 // #include "lc/easy/TwoSum3DatastructureDesign_170.cpp"
 // #include "lc/easy/RemoveLinkedListElements_203.cpp"
 // #include "lc/easy/PaintHouse_256.cpp"
 
-using namespace std;
-
 int main(int argc, char *argv[]) {
 
-  
+  using namespace std;
+  cout << "algo starting ..." << endl;
 
   // int nums[] = {1, 2, 3, 4, 5};
   // LinkedList::ListNode *l = LinkedList::createLinkedList(nums, 5);
@@ -52,13 +47,12 @@ int main(int argc, char *argv[]) {
   // list3.head = removeElements(list3.head, 1);
   // list3.printLinkedList();
 
-
   // int nums[] = {1, 2, 3, 5};
   // LinkedList list(4, nums);
   // list.printLinkedList();
   // invert(&list);
   // list.printLinkedList();
-  
+
   // TwoSum_ *ts = new TwoSum_();
   // ts->add(1);
   // ts->add(1);
@@ -71,6 +65,8 @@ int main(int argc, char *argv[]) {
   // cout << ts->find(-2) << endl;
   // ts->add(-1);
   // cout << ts->find(-2) << endl;
+
+  cout << "algo end ..." << endl;
   return 0;
 }
 //

@@ -6,6 +6,6 @@
 
 #include "Graph.h"
 
-Graph::GraphNode::GraphNode():val(), neighbors(NULL){}
-Graph::GraphNode::GraphNode(int x):val(x), neighbors(NULL){}
+Graph::GraphNode::GraphNode():val(), neighbors(nullptr){}
+Graph::GraphNode::GraphNode(int x):val(x), neighbors(nullptr){}
 Graph::GraphNode::~GraphNode(){}
