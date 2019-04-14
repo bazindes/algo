@@ -5,10 +5,11 @@
 // Input: 1->2->4, 1->3->4
 // Output: 1->1->2->3->4->4
 
-#include "../util/util.h"
+#include "../util/pch.h"
 #include <iostream>
 
 using namespace std;
+using namespace LinkedList;
 
 class MergeTwoSortedLists_21
 {
@@ -85,6 +86,6 @@ void MergeTwoSortedLists_21::test()
     n5.next = &n6;
     // traverse(&n1);
     // traverse(&n4);
-    traverseListNode(mergeTwoLists(&n1, &n4));
+    // traverseListNode(mergeTwoLists(&n1, &n4));
 }
 

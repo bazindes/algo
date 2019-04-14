@@ -4,9 +4,7 @@
   Date: 2019-04-09 17:23
 */
 
-#include "BinaryTree.h"
-#include <cmath>
-#include <iostream>
+#include "../../util/pch.h"
 
 BinaryTree::TreeNode::TreeNode() : val(0), left(nullptr), right(nullptr) {}
 BinaryTree::TreeNode::TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}

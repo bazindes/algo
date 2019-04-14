@@ -4,6 +4,9 @@
   Date: 2019-04-13 14:05
 */
 
+#ifndef PCH_H
+#define PCH_H
+
 // common usage
 #include <iostream>
 #include <algorithm>
@@ -11,6 +14,7 @@
 #include <memory>
 #include <thread>
 #include <utility>
+#include <cmath>
 
 // data structures
 #include <vector>
@@ -28,3 +32,5 @@
 #include "../ds/list/LinkedList.h"
 #include "../ds/list/DoubleLinkedList.h"
 #include "../ds/tree/BinaryTree.h"
+
+#endif

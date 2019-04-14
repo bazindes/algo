@@ -274,7 +274,7 @@ void schorr_waite_alternative(Node *p, Type t) {
     if ((int)t == (int)p->s)
       p->visit();
     p->s++;
-    if (p->s == 3 || p->l && p->l->s == 0) {
+    if (p->s == 3 || (p->l && p->l->s == 0)) {
       Node *r = p->l;
       p->l = p->r;
       p->r = q;
@@ -310,26 +310,26 @@ void lindstrom_dwyer(Node *p) {
       p = q, q = NULL;
   }
 }
-int main() {
-  Node *a[7];
-  for (int i = 7; i--;)
-    a[i] = new Node(i, i * 2 + 1 < 7 ? a[i * 2 + 1] : NULL,
-                    i * 2 + 2 < 7 ? a[i * 2 + 2] : NULL);
-  preorder(a[0]);
-  inorder(a[0]);
-  postorder(a[0]);
-  level_order(a[0]);
-  morris_traversal(a[0], PREORDER);
-  morris_traversal(a[0], INORDER);
-  preorder_stack(a[0]);
-  inorder_stack(a[0]);
-  postorder_stack(a[0]);
-  postorder2_stack(a[0]);
-  schorr_waite(a[0], PREORDER);
-  schorr_waite(a[0], INORDER);
-  schorr_waite(a[0], POSTORDER);
-  schorr_waite_alternative(a[0], PREORDER);
-  schorr_waite_alternative(a[0], INORDER);
-  schorr_waite_alternative(a[0], POSTORDER);
-  lindstrom_dwyer(a[0]);
-}
+// int main() {
+//   Node *a[7];
+//   for (int i = 7; i--;)
+//     a[i] = new Node(i, i * 2 + 1 < 7 ? a[i * 2 + 1] : NULL,
+//                     i * 2 + 2 < 7 ? a[i * 2 + 2] : NULL);
+//   preorder(a[0]);
+//   inorder(a[0]);
+//   postorder(a[0]);
+//   level_order(a[0]);
+//   morris_traversal(a[0], PREORDER);
+//   morris_traversal(a[0], INORDER);
+//   preorder_stack(a[0]);
+//   inorder_stack(a[0]);
+//   postorder_stack(a[0]);
+//   postorder2_stack(a[0]);
+//   schorr_waite(a[0], PREORDER);
+//   schorr_waite(a[0], INORDER);
+//   schorr_waite(a[0], POSTORDER);
+//   schorr_waite_alternative(a[0], PREORDER);
+//   schorr_waite_alternative(a[0], INORDER);
+//   schorr_waite_alternative(a[0], POSTORDER);
+//   lindstrom_dwyer(a[0]);
+// }

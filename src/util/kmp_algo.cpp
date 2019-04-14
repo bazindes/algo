@@ -69,7 +69,7 @@ static int *make_retarget(const char *target) {
 
 // Construct matcher
 
-string_match::string_match(const char *t, int tlen = -1) {
+string_match::string_match(const char *t, int tlen) {
   target = save_string(t, tlen);
   retarget = make_retarget(target);
   index = 0;

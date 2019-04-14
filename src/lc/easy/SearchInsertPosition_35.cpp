@@ -1,4 +1,6 @@
-// Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+// Given a sorted array and a target value, return the index if the target is
+// found. If not, return the index where it would be if it were inserted in
+// order.
 //
 // You may assume no duplicates in the array.
 //
@@ -24,46 +26,35 @@
 #include <vector>
 using namespace std;
 
-class SearchInsertPosition_35
-{
+class SearchInsertPosition_35 {
 public:
   int searchInsert(vector<int> &nums, int target);
   int searchInsert_(vector<int> &nums, int target);
   void test();
 };
 
-int SearchInsertPosition_35::searchInsert(vector<int> &nums, int target)
-{
-  if (nums.empty())
-  {
+int SearchInsertPosition_35::searchInsert(vector<int> &nums, int target) {
+  if (nums.empty()) {
     return -1;
   }
-  if (nums[nums.size() - 1] < target)
-  {
+  if (nums[nums.size() - 1] < target) {
     return nums.size();
   }
   int i = 0, j = nums.size() - 1;
-  while (i < j)
-  {
+  while (i < j) {
     int mid = (i + j) / 2;
-    if (target == nums[mid])
-    {
+    if (target == nums[mid]) {
       return mid;
-    }
-    else if (target > nums[mid])
-    {
+    } else if (target > nums[mid]) {
       i = mid + 1;
-    }
-    else
-    {
+    } else {
       j = mid;
     }
   }
   return i;
 }
 
-void SearchInsertPosition_35::test()
-{
+void SearchInsertPosition_35::test() {
   vector<int> v1 = {1, 3, 5, 6};
   cout << searchInsert(v1, 5) << endl;
   cout << searchInsert(v1, 2) << endl;

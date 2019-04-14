@@ -6,7 +6,7 @@
 
 #include "util/pch.h"
 
-// #include "prac/InvertLinkedList.cpp"
+#include "prac/InvertLinkedList.cpp"
 // #include "lc/easy/TwoSum3DatastructureDesign_170.cpp"
 // #include "lc/easy/RemoveLinkedListElements_203.cpp"
 // #include "lc/easy/PaintHouse_256.cpp"
@@ -16,10 +16,10 @@ int main(int argc, char *argv[]) {
   using namespace std;
   cout << "algo starting ..." << endl;
 
-  // int nums[] = {1, 2, 3, 4, 5};
-  // LinkedList::ListNode *l = LinkedList::createLinkedList(nums, 5);
-  // LinkedList::printLinkedList(l);
-  // LinkedList::printLinkedList(invert(l));
+  int nums[] = {1, 2, 3, 4, 5};
+  LinkedList::ListNode *l = LinkedList::createLinkedList(nums, 5);
+  LinkedList::printLinkedList(l);
+  LinkedList::printLinkedList(invert(l));
 
   // int nums[] = {1, 2, 3, 4, 5};
   // BinaryTree::TreeNode *root = BinaryTree::buildBT(nums, 5, 0);

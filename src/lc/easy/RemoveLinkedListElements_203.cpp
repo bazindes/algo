@@ -5,10 +5,12 @@
   Date: 2019-04-02 19:48
 */
 
-#include "../../ds/list/LinkedList.h"
+#include "../util/pch.h"
 
-LinkedListNode *removeElements(LinkedListNode *head, int val) {
-  LinkedListNode *fake = new LinkedListNode(0);
+using namespace LinkedList;
+
+ListNode *removeElements(ListNode *head, int val) {
+  ListNode *fake = new ListNode(0);
   // corner case, ({1,1,1} 1)
   while (head) {
     if (head->val != val)
@@ -17,8 +19,8 @@ LinkedListNode *removeElements(LinkedListNode *head, int val) {
   }
   // normal code
   fake->next = head;
-  LinkedListNode *runner = head;
-  LinkedListNode *prev = fake;
+  ListNode *runner = head;
+  ListNode *prev = fake;
   while (runner) {
     if (runner->val != val) {
       prev->next = runner;
