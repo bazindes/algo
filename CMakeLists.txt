@@ -11,17 +11,15 @@ set(ALGO_VERSION "${ALGO_VERSION_MAJOR}.${ALGO_VERSION_MINOR}.${ALGO_VERSION_PAT
 message(STATUS "You are compiling: algo ${ALGO_VERSION}")
 
 # add_subdirectory(tests)
-# set(BASIC 
-# src/util/pch.cpp
-# src/algo.cpp
-# src/ds/list/LinkedList.cpp
-# src/ds/list/DoubleLinkedList.cpp
-# src/ds/graph/Graph.cpp
-# src/ds/tree/BinaryTree.cpp
-# )
-
-auto_sources(files "*.cpp" "RECURSE" "${CMAKE_CURRENT_SOURCE_DIR}")
+set(BASIC 
+src/util/pch.cpp
+src/algo.cpp
+src/ds/list/LinkedList.cpp
+src/ds/list/DoubleLinkedList.cpp
+src/ds/graph/Graph.cpp
+src/ds/tree/BinaryTree.cpp
+)
 
 add_executable(algo 
-# ${BASIC}
+${BASIC}
 )
