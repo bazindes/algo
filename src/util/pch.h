@@ -34,3 +34,17 @@
 #include "../ds/tree/BinaryTree.h"
 
 #endif
+
+namespace pch {
+
+template <typename T> void traverseMatrix(T t) {
+  for (auto i : t) {
+    for (auto j : i) {
+      std::cout << j << " ";
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+}
+
+} // namespace pch
