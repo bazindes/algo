@@ -30,10 +30,6 @@ The median is (2 + 3)/2 = 2.5
 #include "../../util/pch.h"
 using namespace std;
 
-double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
+double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {}
 
-}
-
-int main() {
-  return 0;
-}
+int main() { return 0; }

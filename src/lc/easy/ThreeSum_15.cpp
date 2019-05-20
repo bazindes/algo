@@ -47,10 +47,10 @@ vector<vector<int>> threeSum(vector<int> &nums) {
             hi--;
           lo++;
           hi--;
-        }else if(nums[lo] + nums[hi] < sum){
-          lo ++;          
-        }else{
-          hi --;
+        } else if (nums[lo] + nums[hi] < sum) {
+          lo++;
+        } else {
+          hi--;
         }
       }
     }

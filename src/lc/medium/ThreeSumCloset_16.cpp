@@ -25,22 +25,22 @@ int threeSumClosest(vector<int> &nums, int target) {
   int i = 0;
   int n = nums.size();
   int ans = nums[0] + nums[1] + nums[2];
-  for( ; i < n - 2; i ++){
-    if(i == 0 || (i > 0 && nums[i] != nums[i - 1])){
+  for (; i < n - 2; i++) {
+    if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {
       int lo = i + 1;
       int hi = n - 1;
-      while(lo < hi){
+      while (lo < hi) {
         int cur = nums[i] + nums[lo] + nums[hi];
-        if(cur == target){
-          return cur;          
+        if (cur == target) {
+          return cur;
         }
-        if(abs(target - cur) < abs(target - ans)) {
+        if (abs(target - cur) < abs(target - ans)) {
           ans = cur;
         }
-        if(cur > target){
-          hi --;
-        }else{
-          lo ++;
+        if (cur > target) {
+          hi--;
+        } else {
+          lo++;
         }
       }
     }
