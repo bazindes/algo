@@ -25,10 +25,10 @@ ListNode *removeElements(ListNode *head, int val) {
     if (runner->val != val) {
       prev->next = runner;
       prev = runner;
-    } 
+    }
     runner = runner->next;
   }
   // corner case, end with val
-  prev -> next = runner;
+  prev->next = runner;
   return fake->next;
 }

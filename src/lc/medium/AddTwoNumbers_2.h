@@ -4,7 +4,7 @@
 
 #include "ds/list/LinkedList.h"
 
-typedef LinkedListNode ListNode;
+using namespace LinkedList;
 
 class AddTwoNumbers_2 {
 public:
