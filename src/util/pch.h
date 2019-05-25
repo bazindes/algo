@@ -48,3 +48,11 @@ template <typename T> void traverseMatrix(T t) {
 }
 
 } // namespace pch
+
+template<typename T> std::ostream& operator<<(std::ostream &os, const std::vector<T> &A){
+  os << "| ";
+  for(auto &a : A){
+    os << a << " | ";
+  }
+  return os;
+}
