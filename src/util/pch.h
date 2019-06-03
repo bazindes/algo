@@ -56,3 +56,14 @@ template<typename T> std::ostream& operator<<(std::ostream &os, const std::vecto
   }
   return os;
 }
+
+template<typename T> std::ostream& operator<<(std::ostream &os, LinkedList::ListNode *head){
+  LinkedList::ListNode *cur = head;
+  while (cur) {
+    os << " | ";
+    os << cur->val;
+    cur = cur->next;
+  }
+  os << " |" << std::endl;
+  return os;
+}
