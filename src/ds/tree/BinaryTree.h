@@ -19,6 +19,7 @@ struct TreeNode {
 };
 
 TreeNode* buildBT(int nums[], int n, int i);
+TreeNode* buildBT(int **nums, int n, int i);
 
 void printTree(void (*func)(TreeNode *, void (*func)(TreeNode *)), TreeNode *root);
 

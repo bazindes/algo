@@ -19,6 +19,15 @@ BinaryTree::TreeNode *BinaryTree::buildBT(int nums[], int n, int i) {
   return cur;
 }
 
+BinaryTree::TreeNode *BinaryTree::buildBT(int **nums, int n, int i){
+  if (i > n - 1 || nums[i] == nullptr)
+    return nullptr;
+  TreeNode *cur = new TreeNode(*nums[i]);
+  cur->left = buildBT(nums, n, 2 * i + 1);
+  cur->right = buildBT(nums, n, 2 * i + 2);
+  return cur;
+}
+
 void BinaryTree::inOrderTraversal(TreeNode *root, void (*func)(BinaryTree::TreeNode *)) {
   if (!root)
     return;
