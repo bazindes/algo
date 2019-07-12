@@ -29,8 +29,8 @@ minStack.getMin();   --> Returns -2.
 #include <algorithm>
 #include <iostream>
 #include <queue>
-#include <vector>
 #include <stack>
+#include <vector>
 
 using namespace std;
 
@@ -83,11 +83,7 @@ class MinStack_ {
 public:
   MinStack_() {}
 
-  /*
-   * @param number: An integer
-   * @return: nothing
-   * O(1)
-   */
+  // O(1)
   void push(int number) {
     int min = number;
     if (!_data_stack.empty()) {
@@ -100,10 +96,7 @@ public:
     _min_stack.push(min);
   }
 
-  /*
-   * @return: An integer
-   * O(1)
-   */
+  // O(1)
   int pop() {
     int top = _data_stack.top();
     _data_stack.pop();
@@ -114,10 +107,7 @@ public:
   // O(1)
   int top() { return _data_stack.top(); }
 
-  /*
-   * @return: An integer
-   * O(1)
-   */
+  // O(1)
   int getMin() { return _min_stack.top(); }
 
 private:
