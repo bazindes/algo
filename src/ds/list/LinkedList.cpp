@@ -3,7 +3,8 @@
     Created by: baz
     Date: 2019-03-03 15:50
 */
-#include "../../util/pch.h"
+#include <iostream>
+#include "LinkedList.h"
 
 LinkedList::ListNode::ListNode():val(0), next(nullptr) {}
 LinkedList::ListNode::ListNode(int x):val(x), next(nullptr) {}

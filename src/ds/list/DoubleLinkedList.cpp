@@ -4,7 +4,8 @@
     Date: 2019-03-04 22:01
 */
 
-#include "../../util/pch.h"
+#include "DoubleLinkedList.h"
+#include <iostream>
 
 DoubleLinkedList::ListNode::ListNode() : val(0), prev(nullptr), next(nullptr) {}
 DoubleLinkedList::ListNode::ListNode(int x)
