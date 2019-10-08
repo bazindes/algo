@@ -1,7 +1,7 @@
 /*
-  MedianOfTwoSortedArray_4.cpp
+  MedianofTwoSortedArrays_4.cpp
   Created by: baz
-  Date: 2019-05-13 20:58
+  Date: 2019-08-01 15:39
 */
 
 /**
@@ -24,12 +24,27 @@ nums1 = [1, 2]
 nums2 = [3, 4]
 
 The median is (2 + 3)/2 = 2.5
+ */
 
-*/
+#include <iostream>
+#include <vector>
 
-#include "../../util/pch.h"
 using namespace std;
 
-double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {}
+double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
+  int xs = nums1.size();
+  int ys = nums2.size();
+  int i = 0;
+  int j = xs + ys - 1;
+  int x = 0;
+  int y = ys - 1;
+  while(nums1[x] != nums2[y]){
+    
+  }
 
-int main() { return 0; }
+}
+
+int main(){
+
+  return 0;
+}
