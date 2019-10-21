@@ -37,7 +37,7 @@ Given the following tree [1,2,2,3,3,null,null,4,4]:
 Return false.
  */
 
-#include "BinaryTree.cpp"
+#include "BinaryTree.h"
 #include <iostream>
 #include <stdlib.h>
 
@@ -60,15 +60,15 @@ int height(TreeNode *node) {
   return max(l, r) + 1;
 }
 
-int main() {
-  int *nums[] = {new int(1), new int(2), new int(2), new int(3),
-                 nullptr,    nullptr,    new int(3), new int(4),
-                 nullptr,    nullptr,    new int(4)};
-  // int *nums []= {new int(3), new int(9),  new int(20), nullptr,
-  //               nullptr,    new int(15), new int(7)};
-  TreeNode *t1 = buildBT(nums, 11, 0);
-  printTree(inOrderTraversal, t1);
-  cout << height(t1) << endl;
-  // cout << isBalanced(t1) << endl;
-  return 0;
-}
+// int main() {
+//   int *nums[] = {new int(1), new int(2), new int(2), new int(3),
+//                  nullptr,    nullptr,    new int(3), new int(4),
+//                  nullptr,    nullptr,    new int(4)};
+//   // int *nums []= {new int(3), new int(9),  new int(20), nullptr,
+//   //               nullptr,    new int(15), new int(7)};
+//   TreeNode *t1 = buildBT(nums, 11, 0);
+//   printTree(inOrderTraversal, t1);
+//   cout << height(t1) << endl;
+//   // cout << isBalanced(t1) << endl;
+//   return 0;
+// }

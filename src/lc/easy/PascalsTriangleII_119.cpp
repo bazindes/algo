@@ -25,7 +25,7 @@ Could you optimize your algorithm to use only O(k) extra space?
 
 #include <iostream>
 #include <vector>
-#include "util.h"
+#include "Util.h"
 
 using namespace std;
 
@@ -40,7 +40,7 @@ vector<int> getRow(int rowIndex) {
   return ans;
 }
 
-int main() {
-  // cout << getRow(5) << endl;
-  return 0;
-}
+// int main() {
+//   // cout << getRow(5) << endl;
+//   return 0;
+// }

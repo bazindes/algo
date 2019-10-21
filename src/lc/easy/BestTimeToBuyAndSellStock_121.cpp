@@ -43,10 +43,10 @@ int maxProfit(vector<int> &prices) {
   return profit;
 }
 
-int main(){ 
-  vector<int> v1 = {7,1,5,3,6,4};
-  // cout << maxProfit(v1) << endl;
-  vector<int> v2 = {7,6,4,3,1};
-  // cout << maxProfit(v2) << endl;
-  return 0; 
-}
+// int main(){ 
+//   vector<int> v1 = {7,1,5,3,6,4};
+//   // cout << maxProfit(v1) << endl;
+//   vector<int> v2 = {7,6,4,3,1};
+//   // cout << maxProfit(v2) << endl;
+//   return 0; 
+// }

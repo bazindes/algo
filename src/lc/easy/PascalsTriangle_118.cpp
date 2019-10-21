@@ -27,7 +27,7 @@ Output:
 
 #include <iostream>
 #include <vector>
-#include "util.h"
+#include "Util.h"
 
 using namespace std;
 
@@ -54,7 +54,7 @@ vector<vector<int>> generate(int numRows) {
   return ans;
 }
 
-int main(){
-  // cout << generate(5) << endl;
-  return 0;
-}
+// int main(){
+//   // cout << generate(5) << endl;
+//   return 0;
+// }

@@ -23,7 +23,7 @@ return its bottom-up level order traversal as:
 ]
  */
 
-#include "BinaryTree.cpp"
+#include "BinaryTree.h"
 #include <iostream>
 #include <queue>
 #include <vector>
@@ -56,12 +56,12 @@ vector<vector<int>> levelOrderBottom(TreeNode *root) {
   return ans;
 }
 
-int main() {
-  int *nums[] = {new int(3), new int(9),  new int(20), nullptr,
-                 nullptr,    new int(15), new int(7)};
-  TreeNode *t1 = buildBT(nums, 7, 0);
-  printTree(inOrderTraversal, t1);
-  vector<vector<int>> ans = levelOrderBottom(t1);
-  // cout << ans;
-  return 0;
-}
+// int main() {
+//   int *nums[] = {new int(3), new int(9),  new int(20), nullptr,
+//                  nullptr,    new int(15), new int(7)};
+//   TreeNode *t1 = buildBT(nums, 7, 0);
+//   printTree(inOrderTraversal, t1);
+//   vector<vector<int>> ans = levelOrderBottom(t1);
+//   // cout << ans;
+//   return 0;
+// }

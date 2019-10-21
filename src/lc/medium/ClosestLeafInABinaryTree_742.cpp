@@ -64,7 +64,14 @@ k.
 #include <unordered_set>
 #include <vector>
 
+
+
 namespace ClosestLeafInABinaryTree {
+
+void dfsToConvert(
+    std::unordered_map<BinaryTree::TreeNode *,
+                       std::vector<BinaryTree::TreeNode *> *> *graph,
+    BinaryTree::TreeNode *node, BinaryTree::TreeNode *parent);
 
 int findClosestLeaf(BinaryTree::TreeNode *root, int k) {
   std::unordered_map<BinaryTree::TreeNode *,

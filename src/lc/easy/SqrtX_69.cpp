@@ -55,8 +55,8 @@ int mySqrt_(int x) {
   return ans;
 }
 
-int main(){
-  cout << mySqrt_(8) << endl;
-  cout << mySqrt_(4) << endl;
-  cout << mySqrt_(2) << endl;
-}
+// int main(){
+//   cout << mySqrt_(8) << endl;
+//   cout << mySqrt_(4) << endl;
+//   cout << mySqrt_(2) << endl;
+// }

@@ -58,11 +58,11 @@ int maxDepth_(TreeNode *root){
   else return 0;
 }
 
-int main() {
-  int *n[] = { new int(3), new int(9), new int(20), nullptr, nullptr, new int(15), new int(7) };
-  TreeNode *t1 = buildBT(n, 7, 0);
-  printTree(inOrderTraversal, t1);
-  cout << maxDepth(t1) << endl;
-  cout << maxDepth_(t1) << endl;
-  return 0;
-}
+// int main() {
+//   int *n[] = { new int(3), new int(9), new int(20), nullptr, nullptr, new int(15), new int(7) };
+//   TreeNode *t1 = buildBT(n, 7, 0);
+//   printTree(inOrderTraversal, t1);
+//   cout << maxDepth(t1) << endl;
+//   cout << maxDepth_(t1) << endl;
+//   return 0;
+// }

@@ -25,7 +25,7 @@ A solution set is:
 */
 
 #include <vector>
-#include "util.h"
+#include "Util.h"
 
 using namespace std;
 
@@ -60,8 +60,8 @@ vector<vector<int>> threeSum(vector<int> &nums) {
   return ans;
 }
 
-int main() {
-  vector<int> nums = {-1, 0, 1, 2, -1, -4};
-  // util::traverseMatrix<vector<vector<int>>>(threeSum(nums));
-  return 0;
-}
+// int main() {
+//   vector<int> nums = {-1, 0, 1, 2, -1, -4};
+//   // util::traverseMatrix<vector<vector<int>>>(threeSum(nums));
+//   return 0;
+// }

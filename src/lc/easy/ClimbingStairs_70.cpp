@@ -54,7 +54,7 @@ int climbStairs_(int n) {
 }
 
 
-int main() {
-  cout << climbStairs_(2) << endl;
-  cout << climbStairs_(3) << endl;
-}
+// int main() {
+//   cout << climbStairs_(2) << endl;
+//   cout << climbStairs_(3) << endl;
+// }

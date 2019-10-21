@@ -66,9 +66,9 @@ string addBinary(string a, string b) {
   return a;
 }
 
-int main() {
-  string a = "11", b = "1";
-  cout << addBinary(a, b) << endl;
-  a = "1010", b = "1011";
-  cout << addBinary(a, b) << endl;
-}
+// int main() {
+//   string a = "11", b = "1";
+//   cout << addBinary(a, b) << endl;
+//   a = "1010", b = "1011";
+//   cout << addBinary(a, b) << endl;
+// }

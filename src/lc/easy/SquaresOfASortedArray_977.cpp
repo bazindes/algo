@@ -53,12 +53,12 @@ vector<int> sortedSquares_(vector<int> &A){
   return ans;
 }
 
-int main(){
-  vector<int> a1 = {-4,-1,0,3,10};
-  vector<int> a2 = {-7,-3,2,3,11};
+// int main(){
+//   vector<int> a1 = {-4,-1,0,3,10};
+//   vector<int> a2 = {-7,-3,2,3,11};
 
-  // cout << sortedSquares_(a1) << endl;
-  // cout << sortedSquares_(a2) << endl;
+//   // cout << sortedSquares_(a1) << endl;
+//   // cout << sortedSquares_(a2) << endl;
 
-  return 0;
-}
+//   return 0;
+// }

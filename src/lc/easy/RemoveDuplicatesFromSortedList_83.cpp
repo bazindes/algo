@@ -38,15 +38,15 @@ ListNode *deleteDuplicates(ListNode *head) {
   return head;
 }
 
-int main() {
-  int nums[] = {1, 1, 2};
-  ListNode *l1 = createLinkedList(nums, 3);
-  printLinkedList(l1);
-  l1 = deleteDuplicates(l1);
-  printLinkedList(l1);
-  int nums2[] = {1, 1, 2, 3, 3};
-  ListNode *l2 = createLinkedList(nums2, 5);
-  printLinkedList(l2);
-  l2 = deleteDuplicates(l2);
-  printLinkedList(l2);
-}
+// int main() {
+//   int nums[] = {1, 1, 2};
+//   ListNode *l1 = createLinkedList(nums, 3);
+//   printLinkedList(l1);
+//   l1 = deleteDuplicates(l1);
+//   printLinkedList(l1);
+//   int nums2[] = {1, 1, 2, 3, 3};
+//   ListNode *l2 = createLinkedList(nums2, 5);
+//   printLinkedList(l2);
+//   l2 = deleteDuplicates(l2);
+//   printLinkedList(l2);
+// }

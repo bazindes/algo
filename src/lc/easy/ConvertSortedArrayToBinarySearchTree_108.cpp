@@ -48,7 +48,7 @@ TreeNode *helper(vector<int> &nums, int l, int r){
   return t;
 }
 
-int main(){
-  vector<int> v = {-10,-3,0,5,9};
-  printTree(inOrderTraversal, sortedArrayToBST(v));
-}
+// int main(){
+//   vector<int> v = {-10,-3,0,5,9};
+//   printTree(inOrderTraversal, sortedArrayToBST(v));
+// }

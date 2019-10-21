@@ -34,7 +34,7 @@ int lengthOfLastWord(string s) {
   return word.size();
 }
 
-int main(){
-  cout << lengthOfLastWord("Hello World") << endl;
-  cout << lengthOfLastWord("a ") << endl;
-}
+// int main(){
+//   cout << lengthOfLastWord("Hello World") << endl;
+//   cout << lengthOfLastWord("a ") << endl;
+// }

@@ -80,11 +80,11 @@ bool hasCycle_2(ListNode *head) {
   return false;
 }
 
-int main() {
-  int nums[] = {3, 2, 0, -4};
-  ListNode *l1 = createLinkedList(nums, 4);
-  printLinkedList(l1);
-  l1->next->next->next->next = l1->next;
-  cout << hasCycle_(l1) << endl;
-  return 0;
-}
+// int main() {
+//   int nums[] = {3, 2, 0, -4};
+//   ListNode *l1 = createLinkedList(nums, 4);
+//   printLinkedList(l1);
+//   l1->next->next->next->next = l1->next;
+//   // cout << hasCycle_(l1) << endl;
+//   return 0;
+// }

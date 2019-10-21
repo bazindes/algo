@@ -39,8 +39,8 @@ int maxArea(vector<int> &height) {
   return ans;
 }
 
-int main() {
-  vector vc = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-  // cout << maxArea(vc) << endl;
-  return 0;
-}
+// int main() {
+//   vector vc = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+//   // cout << maxArea(vc) << endl;
+//   return 0;
+// }

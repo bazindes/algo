@@ -49,10 +49,10 @@ int singleNumber_(vector<int> &nums) {
   return ans;
 }
 
-int main() {
-  vector<int> v1 = {2, 2, 1};
-  cout << singleNumber(v1) << endl;
-  vector<int> v2 = {4, 1, 2, 1, 2};
-  cout << singleNumber(v2) << endl;
-  return 0;
-}
+// int main() {
+//   vector<int> v1 = {2, 2, 1};
+//   cout << singleNumber(v1) << endl;
+//   vector<int> v2 = {4, 1, 2, 1, 2};
+//   cout << singleNumber(v2) << endl;
+//   return 0;
+// }

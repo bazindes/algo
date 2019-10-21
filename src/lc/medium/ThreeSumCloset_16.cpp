@@ -50,9 +50,9 @@ int threeSumClosest(vector<int> &nums, int target) {
   return ans;
 }
 
-int main() {
-  vector<int> nums = {-1, 2, 1, -4};
-  int tar = 1;
-  cout << threeSumClosest(nums, tar) << endl;
-  return 0;
-}
+// int main() {
+//   vector<int> nums = {-1, 2, 1, -4};
+//   int tar = 1;
+//   cout << threeSumClosest(nums, tar) << endl;
+//   return 0;
+// }

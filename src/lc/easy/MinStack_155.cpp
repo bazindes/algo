@@ -115,15 +115,15 @@ private:
   stack<int> _min_stack;
 };
 
-int main() {
-  MinStack *obj = new MinStack();
-  obj->push(1);
-  obj->push(5);
-  obj->push(2);
-  obj->push(8);
-  obj->pop();
-  int param_3 = obj->top();
-  int param_4 = obj->getMin();
-  cout << param_3 << " " << param_4 << endl;
-  return 0;
-}
+// int main() {
+//   MinStack *obj = new MinStack();
+//   obj->push(1);
+//   obj->push(5);
+//   obj->push(2);
+//   obj->push(8);
+//   obj->pop();
+//   int param_3 = obj->top();
+//   int param_4 = obj->getMin();
+//   cout << param_3 << " " << param_4 << endl;
+//   return 0;
+// }

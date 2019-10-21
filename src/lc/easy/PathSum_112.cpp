@@ -38,8 +38,3 @@ bool cal(TreeNode *node, int cur, int sum){
 bool hasPathSum(TreeNode *root, int sum) {
   return cal(root, 0, sum);
 }
-
-int main(){
-
-  return 0;
-}
