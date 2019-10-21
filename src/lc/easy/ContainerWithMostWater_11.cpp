@@ -17,7 +17,7 @@ Input: [1,8,6,2,5,4,8,3,7]
 Output: 49
 */
 
-#include "../../util/pch.h"
+#include <vector>
 using namespace std;
 
 int maxArea(vector<int> &height) {
@@ -41,6 +41,6 @@ int maxArea(vector<int> &height) {
 
 int main() {
   vector vc = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-  cout << maxArea(vc) << endl;
+  // cout << maxArea(vc) << endl;
   return 0;
 }

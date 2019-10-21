@@ -35,8 +35,7 @@ Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
  */
 
-#include "../../util/pch.h"
-
+#include <vector>
 using namespace std;
 
 int maxProfit(vector<int> &prices) {
@@ -51,8 +50,8 @@ int maxProfit(vector<int> &prices) {
 
 int main() {
   vector<int> v1 = {7, 1, 5, 3, 6, 4};
-  cout << maxProfit(v1) << endl;
+  // cout << maxProfit(v1) << endl;
   vector<int> v2 = {1, 2, 3, 4, 5};
-  cout << maxProfit(v2) << endl;
+  // cout << maxProfit(v2) << endl;
   return 0;
 }

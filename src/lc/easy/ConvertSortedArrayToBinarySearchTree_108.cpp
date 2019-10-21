@@ -25,7 +25,7 @@ height balanced BST:
  -10  5
  */
 
-#include "../../ds/tree/BinaryTree.cpp"
+#include "BinaryTree.h"
 #include <iostream>
 #include <vector>
 

@@ -30,7 +30,7 @@ Note:
 Bonus points if you could solve it both recursively and iteratively.
 */
 
-#include "../../ds/tree/BinaryTree.cpp"
+#include "BinaryTree.h"
 
 using namespace std;
 using namespace BinaryTree;
@@ -52,9 +52,9 @@ int main(){
   int n1[] = {1,2,2,3,4,4,3};
   TreeNode* t1 = buildBT(n1, 7, 0);
   printTree(inOrderTraversal, t1);
-  cout << isSymmetric(t1) << endl;
+  // cout << isSymmetric(t1) << endl;
   int n2[] = {1,2,2,0,3,0,3};
   TreeNode* t2 = buildBT(n2, 7, 0);
   printTree(inOrderTraversal, t2);
-  cout << isSymmetric(t2) << endl;
+  // cout << isSymmetric(t2) << endl;
 }

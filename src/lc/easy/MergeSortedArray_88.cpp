@@ -21,7 +21,7 @@ nums2 = [2,5,6],       n = 3
 Output: [1,2,2,3,5,6]
 */
 
-#include "../../util/pch.h"
+#include <vector>
 
 using namespace std;
 
@@ -45,5 +45,5 @@ int main(){
   vector<int> v1 = {1,2,3,0,0,0};
   vector<int> v2 = {2,5,6};
   merge(v1, 3, v2, 3);
-  cout << v1 << endl;
+  // cout << v1 << endl;
 }

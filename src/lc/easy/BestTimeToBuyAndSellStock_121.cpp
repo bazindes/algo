@@ -28,7 +28,7 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
  */
 
-#include "../../util/pch.h"
+#include <vector>
 using namespace std;
 
 // O(n)
@@ -45,8 +45,8 @@ int maxProfit(vector<int> &prices) {
 
 int main(){ 
   vector<int> v1 = {7,1,5,3,6,4};
-  cout << maxProfit(v1) << endl;
+  // cout << maxProfit(v1) << endl;
   vector<int> v2 = {7,6,4,3,1};
-  cout << maxProfit(v2) << endl;
+  // cout << maxProfit(v2) << endl;
   return 0; 
 }

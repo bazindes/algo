@@ -1,27 +1,17 @@
-/*
-  pch.h  (precompiled headers)
-  Created by: baz
-  Date: 2019-04-13 14:05
-*/
+//
+// Created by baz on 2019-02-19.
+//
 
-#ifndef PCH_H
-#define PCH_H
-
-// common usage
 #include <iostream>
-
-// data structures
 #include <vector>
+#include "LinkedList.h"
 
-// my ds
-#include "../ds/list/LinkedList.h"
-#include "../ds/list/DoubleLinkedList.h"
-#include "../ds/tree/BinaryTree.h"
+#ifndef UTIL_H
+#define UTIL_H
 
-#endif
+namespace util {
 
-namespace pch {
-
+template <typename T> void preOrderTraversal(T &t) {}
 template <typename T> void traverseMatrix(T t) {
   for (auto i : t) {
     for (auto j : i) {
@@ -32,7 +22,7 @@ template <typename T> void traverseMatrix(T t) {
   std::cout << std::endl;
 }
 
-} // namespace pch
+} // namespace util
 
 template<typename T> std::ostream& operator<<(std::ostream &os, const std::vector<T> &A){
   os << "| ";
@@ -52,3 +42,5 @@ template<typename T> std::ostream& operator<<(std::ostream &os, LinkedList::List
   os << " |" << std::endl;
   return os;
 }
+
+#endif

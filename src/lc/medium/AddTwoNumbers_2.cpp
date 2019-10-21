@@ -2,7 +2,7 @@
 // Created by baz on 2019-02-19.
 //
 
-#include "ds/list/LinkedList.h"
+#include "LinkedList.h"
 
 using namespace LinkedList;
 

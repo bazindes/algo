@@ -17,8 +17,11 @@ Example 2:
 Input: [-7,-3,2,3,11]
 Output: [4,9,9,49,121]
 */
-
-#include "../../util/pch.h"
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
 
 using namespace std;
 
@@ -54,8 +57,8 @@ int main(){
   vector<int> a1 = {-4,-1,0,3,10};
   vector<int> a2 = {-7,-3,2,3,11};
 
-  cout << sortedSquares_(a1) << endl;
-  cout << sortedSquares_(a2) << endl;
+  // cout << sortedSquares_(a1) << endl;
+  // cout << sortedSquares_(a2) << endl;
 
   return 0;
 }

@@ -58,7 +58,7 @@ k.
 
 */
 
-#include "ds/tree/BinaryTree.h"
+#include "BinaryTree.h"
 #include <queue>
 #include <unordered_map>
 #include <unordered_set>

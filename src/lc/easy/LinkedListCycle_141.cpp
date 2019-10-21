@@ -34,8 +34,8 @@ Follow up:
 Can you solve it using O(1) (i.e. constant) memory?
  */
 
-#include "../../ds/list/LinkedList.cpp"
-#include "../../util/pch.h"
+#include "LinkedList.h"
+#include <set>
 using namespace std;
 using namespace LinkedList;
 

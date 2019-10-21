@@ -39,7 +39,7 @@ Input:     1         1
 Output: false
 */
 
-#include "../../ds/tree/BinaryTree.cpp"
+#include "BinaryTree.h"
 
 using namespace std;
 using namespace BinaryTree;
@@ -57,10 +57,10 @@ int main() {
   int n1[] = {1, 2, 3};
   TreeNode* t1 = buildBT(n1, 3, 0);
   TreeNode* t2 = buildBT(n1, 3, 0);
-  cout << isSameTree(t1, t2) << endl;
+  // cout << isSameTree(t1, t2) << endl;
   int n2[] = {1, 2};
   int n3[] = {1, 0, 2};
   TreeNode* t3 = buildBT(n2, 3, 0);
   TreeNode* t4 = buildBT(n3, 3, 0);
-  cout << isSameTree(t3, t4) << endl;
+  // cout << isSameTree(t3, t4) << endl;
 }

@@ -24,7 +24,7 @@ Given binary tree [3,9,20,null,null,15,7],
 return its depth = 3.
  */
 
-#include "../../ds/tree/BinaryTree.cpp"
+#include "BinaryTree.h"
 #include <iostream>
 #include <queue>
 

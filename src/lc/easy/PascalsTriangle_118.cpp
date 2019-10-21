@@ -27,7 +27,7 @@ Output:
 
 #include <iostream>
 #include <vector>
-#include "../../util/pch.h"
+#include "util.h"
 
 using namespace std;
 
@@ -55,6 +55,6 @@ vector<vector<int>> generate(int numRows) {
 }
 
 int main(){
-  cout << generate(5) << endl;
+  // cout << generate(5) << endl;
   return 0;
 }

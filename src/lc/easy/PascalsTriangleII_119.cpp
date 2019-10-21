@@ -23,9 +23,9 @@ Follow up:
 Could you optimize your algorithm to use only O(k) extra space?
  */
 
-#include "../../util/pch.h"
 #include <iostream>
 #include <vector>
+#include "util.h"
 
 using namespace std;
 
@@ -41,6 +41,6 @@ vector<int> getRow(int rowIndex) {
 }
 
 int main() {
-  cout << getRow(5) << endl;
+  // cout << getRow(5) << endl;
   return 0;
 }

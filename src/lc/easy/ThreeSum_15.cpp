@@ -24,7 +24,9 @@ A solution set is:
 ]
 */
 
-#include "../../util/pch.h"
+#include <vector>
+#include "util.h"
+
 using namespace std;
 
 // O(n^2)
@@ -60,6 +62,6 @@ vector<vector<int>> threeSum(vector<int> &nums) {
 
 int main() {
   vector<int> nums = {-1, 0, 1, 2, -1, -4};
-  pch::traverseMatrix<vector<vector<int>>>(threeSum(nums));
+  // util::traverseMatrix<vector<vector<int>>>(threeSum(nums));
   return 0;
 }

@@ -15,8 +15,7 @@ If you have figured out the O(n) solution, try coding another solution using the
 divide and conquer approach, which is more subtle.
 */
 
-#include "../../util/pch.h"
-
+#include <vector>
 using namespace std;
 
 int maxSubArray(vector<int> &nums) {
@@ -34,6 +33,6 @@ int maxSubArray(vector<int> &nums) {
 
 int main(void) {
   vector<int> vc = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-  cout << maxSubArray(vc) << endl;
+  // cout << maxSubArray(vc) << endl;
   return 0;
 }

@@ -3,8 +3,7 @@
   Created by: baz
   Date: 2019-03-29 17:10
 */
-#include "../util/pch.h"
-
+#include "LinkedList.h"
 // static LinkedListNode *helper(LinkedListNode *node) {
 //   if (!node->next)
 //     return node;

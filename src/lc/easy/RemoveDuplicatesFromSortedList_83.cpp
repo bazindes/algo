@@ -18,7 +18,7 @@ Input: 1->1->2->3->3
 Output: 1->2->3
 */
 
-#include "../../ds/list/LinkedList.cpp"
+#include "LinkedList.h"
 
 using namespace std;
 using namespace LinkedList;
