@@ -13,6 +13,8 @@
 //   return cur;
 // }
 
+using namespace std;
+
 LinkedList::ListNode *invert(LinkedList::ListNode *head) {
   LinkedList::ListNode *cur = head;
   LinkedList::ListNode *nxt = nullptr;
