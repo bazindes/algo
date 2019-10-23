@@ -21,8 +21,6 @@ struct TreeNode {
 TreeNode* buildBT(int nums[], int n, int i);
 TreeNode* buildBT(int **nums, int n, int i);
 
-void printTree(void (*func)(TreeNode *, void (*func)(TreeNode *)), TreeNode *root);
-
 void inOrderTraversal(TreeNode *root, void (*func)(TreeNode *));
 void preOrderTraversal(TreeNode *root, void (*func)(TreeNode *));
 void postOrderTraversal(TreeNode *root, void (*func)(TreeNode *));

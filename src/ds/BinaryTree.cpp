@@ -6,6 +6,7 @@
 
 #include "BinaryTree.h"
 #include <iostream>
+#include <functional>
 
 BinaryTree::TreeNode::TreeNode() : val(0), left(nullptr), right(nullptr) {}
 BinaryTree::TreeNode::TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
@@ -51,10 +52,4 @@ void BinaryTree::postOrderTraversal(TreeNode *root, void (*func)(BinaryTree::Tre
   postOrderTraversal(root->left, func);
   postOrderTraversal(root->right, func);
   func(root);
-}
-
-void BinaryTree::printTree(void (*func)(TreeNode *, void (*func)(BinaryTree::TreeNode *)), TreeNode *root) {
-  std::cout << "| ";
-  func(root, [](BinaryTree::TreeNode *x){ std::cout << x->val << " | " ;});
-  std::cout << std::endl;
 }

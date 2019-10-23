@@ -1,0 +1,10 @@
+cxx_library(
+    name = "ds",
+    header_namespace = "",
+    headers = ['BinaryTree.h', 'Graph.h', 'LinkedList.h', 'DoubleLinkedList.h'],
+    exported_headers = ['BinaryTree.h', 'Graph.h', 'LinkedList.h', 'DoubleLinkedList.h'],
+    srcs = ['BinaryTree.cpp', 'Graph.cpp', 'LinkedList.cpp', 'DoubleLinkedList.cpp'],
+    deps = [],
+    compiler_flags = ['-Wall' ,'-std=c++17'],
+    visibility = [ "PUBLIC" ]
+)

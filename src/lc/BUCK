@@ -1,0 +1,13 @@
+cxx_test(
+    name = 'lc',
+  srcs = glob([
+    'easy/*.cpp',
+    'medium/*.cpp',
+    'hard/*.cpp',
+  ]),
+  compiler_flags = ['-Wall' , '-std=c++17'],
+  deps = [
+      '//src/ds:ds',
+    '//external:gtest',
+  ],
+)

@@ -30,11 +30,11 @@ A solution set is:
 using namespace std;
 
 // O(n^2)
-vector<vector<int>> threeSum(vector<int> &nums) {
+vector<vector<int> > threeSum(vector<int> &nums) {
   sort(nums.begin(), nums.end());
   int i = 0;
   int n = nums.size();
-  vector<vector<int>> ans;
+  vector<vector<int> > ans;
   for (; i < n; i++) {
     if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {
       int sum = 0 - nums[i];
@@ -42,7 +42,8 @@ vector<vector<int>> threeSum(vector<int> &nums) {
       int hi = n - 1;
       while (lo < hi) {
         if (nums[lo] + nums[hi] == sum) {
-          ans.push_back({nums[i], nums[lo], nums[hi]});
+          vector<int> temp = {nums[i], nums[lo], nums[hi]};
+          ans.push_back(temp);
           while (lo < hi && nums[lo] == nums[lo + 1])
             lo++;
           while (lo < hi && nums[hi] == nums[hi - 1])
@@ -59,9 +60,3 @@ vector<vector<int>> threeSum(vector<int> &nums) {
   }
   return ans;
 }
-
-// int main() {
-//   vector<int> nums = {-1, 0, 1, 2, -1, -4};
-//   // util::traverseMatrix<vector<vector<int>>>(threeSum(nums));
-//   return 0;
-// }
