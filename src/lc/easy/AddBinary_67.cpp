@@ -68,8 +68,10 @@ string addBinary(string a, string b) {
 }
 
 TEST(addBinaryTest, Positive) {
-  string a = "11", b = "1";
-  EXPECT_EQ("100", addBinary(a, b));
-  a = "1010", b = "1011";
-  EXPECT_EQ("10101", addBinary(a, b));
+  EXPECT_EQ("1", addBinary("1", "0"));
+  EXPECT_EQ("0", addBinary("0", "0"));
+  EXPECT_EQ("10", addBinary("1", "1"));
+  EXPECT_EQ("11", addBinary("10", "1"));
+  EXPECT_EQ("100", addBinary("11", "1"));
+  EXPECT_EQ("10101", addBinary("1010", "1011"));
 }

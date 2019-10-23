@@ -40,6 +40,7 @@ Return false.
 #include "BinaryTree.h"
 #include <iostream>
 #include <stdlib.h>
+#include "gtest/gtest.h"
 
 using namespace std;
 using namespace BinaryTree;
@@ -60,15 +61,16 @@ int height(TreeNode *node) {
   return max(l, r) + 1;
 }
 
-// int main() {
-//   int *nums[] = {new int(1), new int(2), new int(2), new int(3),
-//                  nullptr,    nullptr,    new int(3), new int(4),
-//                  nullptr,    nullptr,    new int(4)};
-//   // int *nums []= {new int(3), new int(9),  new int(20), nullptr,
-//   //               nullptr,    new int(15), new int(7)};
-//   TreeNode *t1 = buildBT(nums, 11, 0);
-//   printTree(inOrderTraversal, t1);
-//   cout << height(t1) << endl;
-//   // cout << isBalanced(t1) << endl;
-//   return 0;
-// }
+TEST( isBalanced, isBalanced ) {
+  int *nums[] = {new int(1), new int(2), new int(2), new int(3),
+                 nullptr,    nullptr,    new int(3), new int(4),
+                 nullptr,    nullptr,    new int(4)};
+  
+  TreeNode *t1 = buildBT(nums, 11, 0);
+  EXPECT_EQ(isBalanced(t1) , true);
+
+  int *nums2 []= {new int(3), new int(9),  new int(20), nullptr,
+                nullptr,    new int(15), new int(7)};
+  TreeNode *t2 = buildBT(nums2, 7, 0);
+  EXPECT_EQ(isBalanced(t2) , false);
+}
