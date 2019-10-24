@@ -29,24 +29,25 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
  */
 
 #include <vector>
-using namespace std;
+#include "gtest/gtest.h"
 
 // O(n)
-int maxProfit(vector<int> &prices) {
+int maxProfit(std::vector<int> &prices) {
   int profit = 0;
   if(prices.empty()) return profit;
   int prev = prices[0];
   for(int i=1; i<prices.size(); i++){
-    profit = max(profit, prices[i] - prev);
-    prev = min(prices[i], prev);
+    profit = std::max(profit, prices[i] - prev);
+    prev = std::min(prices[i], prev);
   }
   return profit;
 }
 
-// int main(){ 
-//   vector<int> v1 = {7,1,5,3,6,4};
-//   // cout << maxProfit(v1) << endl;
-//   vector<int> v2 = {7,6,4,3,1};
-//   // cout << maxProfit(v2) << endl;
-//   return 0; 
-// }
+TEST(maxProfit , maxProfit) {
+  std::vector<int> v1 = {7, 1, 5, 3, 6, 4};
+  EXPECT_EQ(maxProfit(v1), 5);
+  std::vector<int> v2 = {1, 2, 3, 4, 5};
+  EXPECT_EQ(maxProfit(v2), 4);
+  std::vector<int> v3 = {7, 6, 4, 3, 1};
+  EXPECT_EQ(maxProfit(v3), 0);
+}

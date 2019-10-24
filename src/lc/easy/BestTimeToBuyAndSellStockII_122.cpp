@@ -36,9 +36,9 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
  */
 
 #include <vector>
-using namespace std;
+#include "gtest/gtest.h"
 
-int maxProfitII(vector<int> &prices) {
+int maxProfitII(std::vector<int> &prices) {
   int p = 0;
   if(prices.empty()) return p;
   for (int i = 1; i < prices.size(); i++) {
@@ -48,10 +48,9 @@ int maxProfitII(vector<int> &prices) {
   return p;
 }
 
-// int main() {
-//   vector<int> v1 = {7, 1, 5, 3, 6, 4};
-//   // cout << maxProfit(v1) << endl;
-//   vector<int> v2 = {1, 2, 3, 4, 5};
-//   // cout << maxProfit(v2) << endl;
-//   return 0;
-// }
+TEST(maxProfitII , maxProfitII) {
+  std::vector<int> v1 = {7, 1, 5, 3, 6, 4};
+  EXPECT_EQ(maxProfitII(v1), 7);
+  std::vector<int> v2 = {1, 2, 3, 4, 5};
+  EXPECT_EQ(maxProfitII(v2), 4);
+}
